@@ -137,3 +137,67 @@ body {
 .delete-btn:hover {
    background-color: #c0392b;
 }
+
+@media (max-width: 600px) {
+   body {
+      padding: 16px;
+   }
+
+   .child-container {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 16px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+   }
+
+   .title {
+      font-size: 24px;
+      margin-bottom: 16px;
+   }
+
+   .title img {
+      width: 28px;
+      height: 28px;
+   }
+
+   .input-group {
+      flex-direction: row;
+      align-items: stretch;
+      gap: 6px;
+   }
+
+   .taskinput {
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 16px;
+   }
+
+   .addBtn {
+      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: 16px;
+   }
+
+   #task-list {
+      gap: 6px;
+   }
+
+   .task-container {
+      padding: 6px 8px;
+   }
+
+   .task-item {
+      gap: 8px;
+      align-items: flex-start;
+   }
+
+   .task-item span {
+      white-space: normal; /* allow wrapping on small screens */
+   }
+
+   .delete-btn {
+      padding: 4px 8px;
+      font-size: 11px;
+   }
+}
