@@ -4,34 +4,51 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>TODO-APP</title>
+   <title>Modern Todo App</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="styles.css">
 
 <body>
-   <div class="body-container" id="body-container">
-      <div class="child-container" id="child-container">
+   <main class="app-container">
+      <header class="app-header">
+         <h1 class="title">
+            To-Do List
+            <img src="./check-list.png" alt="Checklist Icon" class="todo-icon">
+         </h1>
+      </header>
 
-         <h1 id="main-title" class="title">TO-DO LIST <img src="./check-list.png" id="todo-icon" class="todo-icon"></h1>
+      <section class="input-section">
+         <div class="input-group">
+            <input type="text" placeholder="Add a new task..." id="task-input" class="task-input" aria-label="Task content">
+            <button id="add-btn" class="btn btn-primary">Add</button>
+         </div>
+      </section>
 
-        <div class="input-group" id="input-group">
-            <input type="text" placeholder="Add Your task" id="task-input" class="taskinput">
-            <button id="add-btn" class="addBtn" onclick="addTask()">Add</button>
-            </div>
+      <section class="controls-section">
+         <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+         </div>
+         <button id="clear-btn" class="btn btn-danger">Clear All</button>
+      </section>
 
-           <div id="task-list"></div>
-       
+      <section class="list-section">
+         <ul id="task-list" class="task-list">
+            <!-- Tasks will be injected here -->
+         </ul>
+         <p id="empty-state" class="empty-state hidden">No tasks found. Add one above!</p>
+      </section>
+   </main>
 
-      </div>
-   </div>
-   <script src="scripts.js"></script>
-   <footer style="text-align:center; margin-top:20px; font-size:30px; opacity:0.7;
-   font-family:'Courier New', Courier, monospace;
-   font-weight: bold;
-   ">
-      Made with love❤️ by Divas Sharma<br>
-      More Projects coming soon😊
+   <footer class="app-footer">
+      <p>Made with love ❤️ by Divas Sharma</p>
    </footer>
+
+   <script src="scripts.js"></script>
 </body>
 
 </html>
