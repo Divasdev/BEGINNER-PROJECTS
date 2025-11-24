@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerospace | Discover Aircraft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AERO</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Aircraft</a></li>
+                <li><a href="#">Manufacturers</a></li>
+                <li><a href="#">Operators</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Discover the Skies</h1>
+            <p>Explore the world's most iconic aircraft, from commercial giants to supersonic legends.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Filters -->
+        <section class="filters" id="filters">
+            <div class="filter-group">
+                <label for="manufacturer-select">Manufacturer</label>
+                <select id="manufacturer-select">
+                    <option value="all">All Manufacturers</option>
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="type-select">Type</label>
+                <select id="type-select">
+                    <option value="all">All Types</option>
+                    <!-- Populated by JS -->
+                </select>
+            </div>
+            <div class="search-group">
+                <input type="text" id="search-input" placeholder="Search aircraft...">
+            </div>
+        </section>
+
+        <!-- Aircraft Grid -->
+        <section class="aircraft-grid" id="aircraft-grid">
+            <!-- Cards injected here -->
+            <div class="loading">Loading fleet...</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aerospace DB. Designed for Aviation Enthusiasts.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

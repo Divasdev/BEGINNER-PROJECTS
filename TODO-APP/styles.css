@@ -1,0 +1,139 @@
+/* --- PAGE LAYOUT --- */
+
+body {
+   margin: 0;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+   background-color: aliceblue;
+}
+
+.body-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+/* --- MAIN CARD / BOX --- */
+
+.child-container {
+   background-color: #ffffff;
+   padding: 32px 28px;
+   border-radius: 12px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+   width: 100%;
+   max-width: 420px;
+}
+
+/* --- TITLE --- */
+
+.title {
+   font-size: 32px;
+   margin: 0 0 24px 0;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.title img {
+   width: 36px;
+   height: 36px;
+}
+
+/* --- INPUT + BUTTON ROW --- */
+
+.input-group {
+   display: flex;
+   align-items: center;
+   margin-bottom: 12px;
+   gap: 8px;
+}
+
+/* Text input */
+
+.taskinput {
+   padding: 10px 14px;
+   border: 1px solid #ccc;
+   border-right: none;
+   border-radius: 20px 0 0 20px;
+   outline: none;
+   width: 100%;
+   background-color: #f3f0ed;
+   font-size: 14px;
+}
+
+/* Add button */
+
+.addBtn {
+   padding: 10px 20px;
+   border: 1px solid #4CAF50;
+   border-left: none;
+   background-color: #4CAF50;
+   color: white;
+   border-radius: 0 20px 20px 0;
+   cursor: pointer;
+   font-size: 14px;
+   white-space: nowrap;
+}
+
+.addBtn:hover {
+   background-color: #45a049;
+}
+
+/* --- TASK LIST CONTAINER --- */
+
+#task-list {
+   margin-top: 8px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;              /* space between tasks */
+}
+
+/* --- SINGLE TASK ROW --- */
+
+.task-container {
+   background-color: #f8f9fa;
+   border-radius: 8px;
+   padding: 8px 10px;
+}
+
+.task-item {
+   display: flex;
+   align-items: center;
+   gap: 12px;
+   flex-wrap: nowrap;
+}
+
+.task-item span {
+   white-space: nowrap;
+}
+/* Checkbox */
+
+.checkbox-task {
+   width: 18px;
+   height: 18px;
+   cursor: pointer;
+}
+
+/* Task text (span inside .task-item) */
+
+.task-item span {
+   flex: 1;                      /* take remaining space */
+   word-break: break-word;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+   padding: 6px 10px;
+   border-radius: 6px;
+   border: none;
+   cursor: pointer;
+   font-size: 12px;
+   background-color: #e74c3c;
+   color: #fff;
+}
+
+.delete-btn:hover {
+   background-color: #c0392b;
+}

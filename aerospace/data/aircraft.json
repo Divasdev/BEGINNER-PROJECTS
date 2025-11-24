@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Boeing 747-400",
+    "manufacturer": "Boeing",
+    "type": "Wide-body Commercial Jet",
+    "operator": "Lufthansa",
+    "year_made": 1989,
+    "image": "https://images.unsplash.com/photo-1540962351504-03099e0a754b?auto=format&fit=crop&w=800&q=80",
+    "description": "The Boeing 747-400 is a major development and the best-selling model of the Boeing 747 family of jet airliners.",
+    "specs": {
+      "range": "7,260 nmi",
+      "speed": "Mach 0.85",
+      "capacity": "416 passengers"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Airbus A380",
+    "manufacturer": "Airbus",
+    "type": "Wide-body Commercial Jet",
+    "operator": "Emirates",
+    "year_made": 2005,
+    "image": "https://images.unsplash.com/photo-1559087867-ce4c91325525?auto=format&fit=crop&w=800&q=80",
+    "description": "The Airbus A380 is the world's largest passenger airliner, a wide-body aircraft manufactured by Airbus.",
+    "specs": {
+      "range": "8,000 nmi",
+      "speed": "Mach 0.85",
+      "capacity": "853 passengers"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cessna 172 Skyhawk",
+    "manufacturer": "Cessna",
+    "type": "General Aviation",
+    "operator": "Private",
+    "year_made": 1956,
+    "image": "https://images.unsplash.com/photo-1559627748-db44e50609d4?auto=format&fit=crop&w=800&q=80",
+    "description": "The Cessna 172 Skyhawk is an American four-seat, single-engine, high wing, fixed-wing aircraft made by the Cessna Aircraft Company.",
+    "specs": {
+      "range": "640 nmi",
+      "speed": "122 kn",
+      "capacity": "4 passengers"
+    }
+  },
+  {
+    "id": 4,
+    "name": "F-22 Raptor",
+    "manufacturer": "Lockheed Martin",
+    "type": "Stealth Tactical Fighter",
+    "operator": "USAF",
+    "year_made": 1997,
+    "image": "https://images.unsplash.com/photo-1544933863-58286d6ce272?auto=format&fit=crop&w=800&q=80",
+    "description": "The Lockheed Martin F-22 Raptor is an American single-seat, twin-engine, all-weather stealth tactical fighter aircraft developed for the United States Air Force.",
+    "specs": {
+      "range": "1,600 nmi",
+      "speed": "Mach 2.25",
+      "capacity": "1 pilot"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Concorde",
+    "manufacturer": "BAC / Aérospatiale",
+    "type": "Supersonic Transport",
+    "operator": "British Airways",
+    "year_made": 1969,
+    "image": "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=800&q=80",
+    "description": "The Aérospatiale/BAC Concorde is a British-French turbojet-powered supersonic passenger airliner that was operated until 2003.",
+    "specs": {
+      "range": "3,900 nmi",
+      "speed": "Mach 2.04",
+      "capacity": "100 passengers"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Bombardier Global 7500",
+    "manufacturer": "Bombardier",
+    "type": "Business Jet",
+    "operator": "VistaJet",
+    "year_made": 2018,
+    "image": "https://images.unsplash.com/photo-1583413230540-ddf90681a8f8?auto=format&fit=crop&w=800&q=80",
+    "description": "The Bombardier Global 7500 is an ultra-long-range business jet developed by Bombardier Aviation.",
+    "specs": {
+      "range": "7,700 nmi",
+      "speed": "Mach 0.925",
+      "capacity": "19 passengers"
+    }
+  }
+]
