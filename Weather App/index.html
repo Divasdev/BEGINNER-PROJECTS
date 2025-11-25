@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Know your weather</title>
 </head>
 <link rel="stylesheet" href="styles.css">
+
 <body>
    <div id="container">
       <div class="search-box">
-    <input type="text" placeholder="Search Location"> 
-     <button >
-          🔍
-     </button>
+         <input type="text" placeholder="Search Location">
+         <button>
+            🔍
+         </button>
       </div>
    <div id="weather-info">
-         <img id="weather-icon" src=" " alt=" weather icon">
-
+        
          <h1 class="temp">25°C</h1>
-         <p>Partly cloudy </p>
+          <img id="weather-icon" src=" " alt=" weather icon">
+
+         <p class="type">Partly cloudy </p>
          <h2 class="city">New York </h2>
+      </div>
+   <div class="details">
+      <div class="col">
+         <img src="humidity-icon.png">
+         <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+         </div>
+      </div>
+
+      <div class="col">
+         <img src="Wind-icon.png">
+         <div>
+            <p class="wind">50km/hr</p>
+            <p>Wind</p>
+         </div>
+      </div>
+
+
+      <div class="col">
+         <img src="weekdays-icon.png">
+         <div>
+            <p class="weekdays">50%</p>
+            <p>Mon Tue Wed Thur Fri</p>
+
+         </div>
     </div>
-<div class="col">
-     <img src="humidity-icon.png">
-   <div>
-       <p class="humidity">50%</p>
-       <p>Humidity</p>
    </div>
-</div>  
-
-<div class="col">
-   <img src="Wind-icon.png">
-   <div>
-       <p class="wind">50km/hr</p>
-       <p>Wind</p>
    </div>
-</div>
-
-
-       <div class="col">
-   <img src="weekdays-icon.png">
-   <div>
-       <p class="weekdays">50%</p>
-       <p>Mon Tue Wed Thur Fri</p>
-
-   </div>
-</div>
-   
 </body>
 <script src="scripts.js"></script>
+
 </html>
