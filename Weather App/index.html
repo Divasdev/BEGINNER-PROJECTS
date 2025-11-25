@@ -8,27 +8,44 @@
 <link rel="stylesheet" href="styles.css">
 <body>
    <div id="container">
-      <input type="text" placeholder="Search Location">
-      <div id="weather-info">
+      <div class="search-box">
+    <input type="text" placeholder="Search Location"> 
+     <button >
+          🔍
+     </button>
+      </div>
+   <div id="weather-info">
+         <img id="weather-icon" src=" " alt=" weather icon">
 
-         <h1>25°</h1>
+         <h1 class="temp">25°C</h1>
          <p>Partly cloudy </p>
-         <p>New York</p>
-      </div>
-      <div>
-         <h2>
-            Humidity
-            60%
-         </h2>
-         <h2>
-            Wind 
-            5km/h
-         </h2>
-         <h2>
-            Mon Tue Wed Thu Fri
-         </h2>
-      </div>
+         <h2 class="city">New York </h2>
+    </div>
+<div class="col">
+     <img src="humidity-icon.png">
+   <div>
+       <p class="humidity">50%</p>
+       <p>Humidity</p>
    </div>
+</div>  
+
+<div class="col">
+   <img src="Wind-icon.png">
+   <div>
+       <p class="wind">50km/hr</p>
+       <p>Wind</p>
+   </div>
+</div>
+
+
+       <div class="col">
+   <img src="weekdays-icon.png">
+   <div>
+       <p class="weekdays">50%</p>
+       <p>Mon Tue Wed Thur Fri</p>
+
+   </div>
+</div>
    
 </body>
 <script src="scripts.js"></script>
