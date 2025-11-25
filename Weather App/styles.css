@@ -50,8 +50,16 @@ button{
 }
 #weather-info{
    display: flex;
-   flex-direction: column;
    align-items: center;
+   justify-content: center;
+   gap: 20px;
+
+}
+
+.weather-text{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
 }
 .temp{
    font-size:6rem;
@@ -72,13 +80,24 @@ button{
 .details{
    display: flex;
    justify-content: space-between;
-   flex-direction: row;
-   gap: 20px;
+   margin-top:  30px;
+   gap: 10px;
 }
 .col{
    background: rgba(255, 255,255, 0.2);
    padding: 15px;
    border-radius: 30px;
+   backdrop-filter:blur(5px);
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex: 1;
+
+}
+.colimg{
+   width: 30px;
+   margin-right: 10px;
 }
 
 
