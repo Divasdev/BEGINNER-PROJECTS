@@ -1,22 +1,35 @@
 /* Reset-ish and helpful defaults */
-*{ box-sizing: border-box; }
-html,body{ height:100%; margin:0; padding:0; }
+* {
+   box-sizing: border-box;
+}
+
+html,
+body {
+   margin: 0;
+   padding: 0;
+   /* height: 100%; REMOVED to allow scrolling */
+}
+
 body {
    min-height: 100vh;
    display: flex;
    align-items: center;
    justify-content: center;
    background: radial-gradient(circle at top, #b7d7ff 0%, #8ab7ff 30%, #6d8eea 60%, #5b6fd9 100%);
-   -webkit-font-smoothing:antialiased;
-   -moz-osx-font-smoothing:grayscale;
-   overflow-x: hidden; /* prevent horizontal overflow on small devices */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   overflow-x: hidden;
+   padding: 10px 0;
+   /* Add padding for safety */
 }
 
 /* Make the card width responsive */
 #container {
-   width: min(92vw, 620px); /* responsive width */
+   width: min(92vw, 620px);
+   /* responsive width */
    max-width: 620px;
-   min-height: 520px;
+   min-height: auto;
+   /* Let content define height */
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -26,7 +39,8 @@ body {
    border: 1px solid rgba(255, 255, 255, 0.25);
    -webkit-backdrop-filter: blur(20px);
    backdrop-filter: blur(20px);
-   padding: 28px 22px; /* slightly reduced to help small screens */
+   padding: 28px 22px;
+   /* slightly reduced to help small screens */
    border-radius: 22px;
    color: whitesmoke;
    position: relative;
@@ -117,7 +131,8 @@ button {
    gap: 14px;
    margin-top: 40px;
    width: 100%;
-   flex-wrap: wrap; /* allow wrapping on small screens */
+   flex-wrap: wrap;
+   /* allow wrapping on small screens */
 }
 
 .col {
@@ -132,8 +147,10 @@ button {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   min-width: 140px; /* smaller min width helps wrapping */
-   flex: 1 1 140px; /* allow shrink/grow */
+   min-width: 140px;
+   /* smaller min width helps wrapping */
+   flex: 1 1 140px;
+   /* allow shrink/grow */
    gap: 10px;
 }
 
@@ -154,56 +171,77 @@ button {
    margin-bottom: 6px;
 }
 
-.weekday { display:flex; align-items:center; text-align:center; }
-.imgs { width: 100%; max-width: 400px; }
-
-.footer {
-   position: absolute;
-   bottom: 8px;
+.weekday {
+   display: flex;
+   align-items: center;
    text-align: center;
-   width: 100%;
-   color: rgba(0, 0, 0, 0.6);
-   font-size: 1rem;
-   font-family: sans-serif;
-   pointer-events: none;
 }
 
-/* Mobile-specific tweaks */
+.imgs {
+   width: 40px;
+   height: auto;
+}
+
+
+
+/* Mobile responsive design */
 @media (max-width: 600px) {
-   #container {
-      width: 94vw;
-      min-height: auto; /* let content define height */
-      border-radius: 14px;
-      padding: 18px;
-      justify-content: flex-start;
+   body {
+      align-items: flex-start;
+      padding: 10px 0;
    }
 
-   .search-box { margin-top: 10px; }
+   #container {
+      width: 90%;
+      margin: 10px auto;
+      padding: 20px 15px;
+      min-height: auto;
+   }
 
-   .temp { font-size: clamp(3rem, 12vw, 6rem); }
-   .type { font-size: 1.4rem; }
+   .search-box {
+      margin-bottom: 20px;
+   }
+
+   #weather-info {
+      flex-direction: column;
+   }
+
+   .temp {
+      font-size: 4rem;
+   }
+
+   .type {
+      font-size: 1.2rem;
+   }
+
+   .city {
+      font-size: 1rem;
+   }
 
    .details {
-      gap: 10px;
-      margin-top: 22px;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
    }
 
    .col {
-      min-width: 120px;
-      padding: 12px;
-      flex: 1 1 45%; /* two columns on small screens */
-   }
-
-   /* make the large pressure card span full width */
-   .col.full-width {
-      flex-basis: 100%;
+      width: 100%;
       min-width: 100%;
+      flex: none;
    }
 
-   .weather-icon { width: clamp(70px, 28vw, 110px); }
+   .weather-icon {
+      width: 80px;
+   }
 
-   .footer { position: relative; margin-top: 18px; }
+   .footer {
+      position: relative;
+      margin-top: 20px;
+   }
 }
 
-/* Help ensure images never overflow their containers */
-img { max-width: 100%; height: auto; display: block; }
+/* Prevent image overflow */
+img {
+   max-width: 100%;
+   height: auto;
+}
