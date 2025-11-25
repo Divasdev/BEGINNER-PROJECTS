@@ -266,3 +266,17 @@ body {
     width: 100%;
   }
 }
+
+
+.weather-icon{
+  width: 90px;               /* size as needed */
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  /* Make black disappear on light backgrounds */
+  mix-blend-mode: screen;
+  /* keep it crisp and shiny */
+  filter: saturate(1.15) drop-shadow(0 8px 18px rgba(0,0,0,0.25));
+  /* if you need spacing */
+  margin-bottom: 6px;
+}
