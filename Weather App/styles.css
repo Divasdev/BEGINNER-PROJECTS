@@ -149,3 +149,11 @@ button{
   margin-bottom: 6px;
 }
 
+.weekday{
+   display: flex;
+   align-items: center;
+   text-align: center;
+}
+.imgs{
+   width: 400px;
+}

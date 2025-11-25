@@ -9,7 +9,7 @@ const cityName = document.querySelector('.city');
 const humidity = document.querySelector('.humidity');
 const windSpeed = document.querySelector('.wind');
 
-
+const pressureUnit=document.querySelector('.press');
 const apiKey="b4211a78c0cc6323e0287901ff614c4c";
 const apiUrl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
@@ -28,7 +28,7 @@ async function checkWeather(city){
    humidity.innerHTML = data.main.humidity + "%";
    windSpeed.innerHTML = data.wind.speed + "km/h";
    weatherDesc.innerHTML=data.weather[0].description;
-
+   pressureUnit.innerHTML=data.main.pressure +  "mm/hg";
    // Use the 'main' field from the weather array and compare lowercase strings
    const weatherMain = data.weather[0].main.toLowerCase();
 
@@ -64,3 +64,12 @@ searchBtn.addEventListener('click', (event) => {
    const city = searchBox.value.trim();
    if (city) checkWeather(city);
 });
+
+searchBox.addEventListener('keydown',(event)=>{
+   if(event.key==='Enter'){
+      checkWeather(searchBox.value);
+   }
+});
+
+
+checkWeather("New York");
