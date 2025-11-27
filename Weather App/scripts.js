@@ -50,6 +50,9 @@ async function checkWeather(city) {
    else if (weatherMain == "haze") {
       weatherIcon.src = "haze.png";
    }
+   else if(weatherMain=="smoke"){
+      weatherIcon="fog.png";
+   }
    else {
       // fallback icon if none of the above match
       weatherIcon.src = "default.png";

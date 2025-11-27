@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> GreenBasket</title>
+   <link rel="stylesheet" href="styles.css">
+   <!--LINK TO GOOGLE FONTS-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   <!--Fevicon-->
+   <link rel="icon" href="Favicon-32x32.svg" sizes="32x32" type="image/svg+xml">
+</head>
+
+<body>
+   <header>
+      <!--- TOP HEADER-->
+      <div class="topmost-div">
+         <span class="call-us">Call-Us-:+91 7005869756</span>
+         <span class="promo-tag">Sign up and GET 25% OFF for your first order. <a href="" class="signuplink">Sign Up
+               now</a></span>
+         <div class="social-links">
+            <a href=""><img src="Images/HubSpot Brand Kit/Logo/JPEG/facebook.png" class="facebook-logo"
+                  alt="facebook"></a>
+            <a href=""><img src="Images/HubSpot Brand Kit/Logo/JPEG/instagram.png" class="instagram-logo"
+                  alt="instagram"></a>
+            <a href=""><img src="Images/HubSpot Brand Kit/Logo/JPEG/twitter.png" class="twitter-logo" alt="twitter"></a>
+         </div>
+      </div>
+
+      <div class="header-container">
+
+         <!-- LEFT: logo + location -->
+         <div class="header-left">
+            <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="logosvg" alt="logo">
+            <h1 class="logo">GreenBasket</h1>
+
+            <div class="location-box">
+               <label class="location-label" for="location-select">Location</label>
+               <select id="location-select" class="location-select">
+                  <option>New York, USA</option>
+                  <option>Los Angeles, USA</option>
+                  <option>Chicago, USA</option>
+               </select>
+            </div>
+         </div>
+
+         <!-- CENTER: search bar -->
+         <div class="search-area">
+            <img src="Images/HubSpot Brand Kit/Logo/SVG/search.png" class="search-icon" alt="search">
+            <input type="text" class="search-input" placeholder="Search for products" aria-label="Search products">
+         </div>
+
+         <!-- RIGHT: icons -->
+         <div class="header-right">
+            <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon" alt="wishlist">
+            <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart">
+            <img class="usericon" src="Images/HubSpot Brand Kit/Logo/SVG/user.png" alt="user">
+         </div>
+      </div> <!-- end of header-container -->
+
+      <section class="bottom-header-container">
+         <div class="browsediv">
+            <button class="browse"><img src="Images/HubSpot Brand Kit/Logo/SVG/more.png" width="20px">Browse All Categories</button>
+         </div>
+
+         <nav class="bottom-nav">
+            <ul class="nav-list">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">Fruits</a></li>
+               <li><a href="#">Vegetables</a></li>
+               <li><a href="#">Beverages</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Blogs</a></li>
+            </ul>
+         </nav>
+                  <!-- Recently viewed dropdown -->
+         <div class="recently-viewed">
+            <button class="recent-btn">Recently Viewed <span class="caret">▾</span></button>
+            <div class="recent-dropdown">
+               <ul class="recent-list">
+                  <li class="recent-item">
+                     <img src="Images/Products/apple.png" alt="Apple" class="recent-thumb">
+                     <div class="recent-meta"><strong>Red Apple</strong><span class="price">₹45 / kg</span></div>
+                  </li>
+                  <li class="recent-item">
+                     <img src="Images/Products/tomato.png" alt="Tomato" class="recent-thumb">
+                     <div class="recent-meta"><strong>Tomato</strong><span class="price">₹30 / kg</span></div>
+                  </li>
+                  <li class="recent-item">
+                     <img src="Images/Products/milk.png" alt="Milk" class="recent-thumb">
+                     <div class="recent-meta"><strong>Milk (1L)</strong><span class="price">₹60</span></div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+
+   </header>
+ 
+</body>
+<script src="scripts.js"></script>
+
+</html>
