@@ -152,9 +152,96 @@ body, nav, .small-text, .labels {
 
 /* responsive adjust */
 @media (max-width: 768px) {
-  .search-area {
-    width: 60%;
+  /* global box-sizing for consistent shrinking */
+  *, *::before, *::after { box-sizing: border-box; }
+
+  /* compact the header and allow clean wrapping */
+  .header-container {
+    padding: 8px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
   }
+
+  /* layout: logo left, search center (full width), icons right */
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .search-area {
+    order: 2;
+    flex: 1 1 100%; /* take full width but able to shrink */
+    min-width: 0; /* allows input to shrink inside flex */
+    padding: 6px 10px;
+    gap: 8px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px) saturate(140%);
+    -webkit-backdrop-filter: blur(8px) saturate(140%);
+    box-shadow: none;
+  }
+
+  .search-area input {
+    font-size: 13px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-right {
+    order: 3;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+  }
+
+  /* shrink graphics */
+  .logosvg { width: 36px; height: 36px; }
+  .logo { font-size: 18px; }
+  .header-right img { width: 18px; }
+
+  /* hide non-essential elements on mobile to reduce bulk */
+  .location-box, .recently-viewed, .nav-list, .bottom-header-container .nav-list {
+    display: none !important;
+  }
+
+  /* make the browse button smaller and move it into flow if present */
+  .browse {
+    display: inline-flex;
+    padding: 6px 10px;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  /* reduce bottom header presence */
+  .bottom-header-container { padding: 8px 10px; gap: 8px; }
+
+  /* ensure dropdowns and popovers fit */
+  .recent-dropdown { right: 8px; width: calc(100% - 32px); }
+
+  /* reduce shadows and spacing that cause the header to appear 'phat' */
+  .header-container, .search-area, .bottom-header-container { box-shadow: none; }
+}
+
+/* extra compact rules for very small screens */
+@media (max-width: 480px) {
+  .header-container { padding: 6px 8px; gap: 6px; }
+  .logosvg { width: 32px; height: 32px; }
+  .logo { font-size: 16px; }
+  .search-area { padding: 6px 8px; border-radius: 8px; }
+  .search-area input { font-size: 12px; }
+  .header-right img { width: 16px; }
+  /* hide the browse button entirely on tiny screens */
+  .browse { display: none !important; }
 }
 
 .browsediv{

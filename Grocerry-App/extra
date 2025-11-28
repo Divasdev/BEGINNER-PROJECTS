@@ -1,0 +1,28 @@
+<section class="hero-section">
+      <div class="hero-content">
+         <div class="hero-text-badge">
+            <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="icon" class="badge-icon">
+            <span>The Best Online Grocery Store</span>
+         </div>
+         <h1 class="hero-title">Your One-Stop Shop for <span class="highlight-text">Quality Groceries</span></h1>
+         <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore.</p>
+
+         <div class="hero-buttons">
+            <button class="shop-now-btn">Shop Now &rarr;</button>
+            <div class="view-products">
+               <span class="view-text">View All Products</span>
+            </div>
+         </div>
+      </div>
+
+      <div class="hero-image-container">
+         <img src="Images/hero_image.png" alt="Happy woman holding grocery basket" class="hero-img">
+
+         <!-- Floating elements for decoration -->
+         <div class="float-card secure-payment">
+            <div class="icon-circle"><img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" alt="secure"></div>
+            <span>Secure Payment</span>
+         </div>
+      </div>
+   </section>
