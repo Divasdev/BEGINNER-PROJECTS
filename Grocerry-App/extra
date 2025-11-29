@@ -1,28 +1,25 @@
-<section class="hero-section">
-      <div class="hero-content">
-         <div class="hero-text-badge">
-            <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="icon" class="badge-icon">
-            <span>The Best Online Grocery Store</span>
-         </div>
-         <h1 class="hero-title">Your One-Stop Shop for <span class="highlight-text">Quality Groceries</span></h1>
-         <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore.</p>
+.site-footer { background:#2f8f4a; color:#fff; padding:2.25rem 0; border-radius:8px; margin-top:2rem; }
+.footer-container { max-width:1100px; margin:0 auto; }
+.footer-top { display:flex; gap:2rem; align-items:flex-start; padding-bottom:1.25rem; border-bottom:1px solid rgba(255,255,255,0.06); }
+.footer-brand { display:flex; gap:1rem; align-items:flex-start; flex: 1 1 320px; }
+.footer-logo { background:#fff; padding:6px; border-radius:8px; }
+.brand-name { font-size:1.15rem; color:#fff; display:block; margin-bottom:.25rem; }
+.brand-desc { color: rgba(255,255,255,0.9); font-size:.95rem; margin:0 0 .5rem; max-width:340px; }
+.social-icons a img { opacity:.95; margin-right:.5rem; }
 
-         <div class="hero-buttons">
-            <button class="shop-now-btn">Shop Now &rarr;</button>
-            <div class="view-products">
-               <span class="view-text">View All Products</span>
-            </div>
-         </div>
-      </div>
+.footer-links { display:flex; gap:2rem; flex:2 1 560px; }
+.footer-col h4 { margin:0 0 .5rem; color:#fff; font-size:.98rem; }
+.footer-col ul { list-style:none; padding:0; margin:0; }
+.footer-col li { margin:.45rem 0; }
+.footer-col a { color: rgba(255,255,255,0.95); text-decoration:none; font-size:.95rem; }
+.contact-col address p { margin:.25rem 0; font-style:normal; color: rgba(255,255,255,0.95); }
 
-      <div class="hero-image-container">
-         <img src="Images/hero_image.png" alt="Happy woman holding grocery basket" class="hero-img">
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; margin-top:1rem; color: rgba(255,255,255,0.9); font-size:.9rem; }
+.footer-controls { display:flex; gap:.5rem; align-items:center; }
+.footer-select { background: transparent; color:#fff; border:1px solid rgba(255,255,255,0.06); padding:.35rem .6rem; border-radius:6px; }
 
-         <!-- Floating elements for decoration -->
-         <div class="float-card secure-payment">
-            <div class="icon-circle"><img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" alt="secure"></div>
-            <span>Secure Payment</span>
-         </div>
-      </div>
-   </section>
+@media (max-width:900px){
+  .footer-top { flex-direction:column; gap:1rem; }
+  .footer-links { flex-direction:row; flex-wrap:wrap; }
+  .footer-bottom { flex-direction:column; gap:.6rem; align-items:flex-start; }
+}
