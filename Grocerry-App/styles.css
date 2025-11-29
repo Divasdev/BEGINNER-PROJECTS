@@ -400,9 +400,10 @@ nav,
   left: 0;
   right: 0;
   bottom: 0;
-  /* Reduced opacity to let background show through (approx 20-30% visibility) */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.7) 100%);
+  /* temporary reduced overlay so content is visible */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.0) 100%);
   z-index: 1;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -692,3 +693,254 @@ nav,
 }
 
 /* end hero section */
+
+
+
+
+
+
+.categories-container{
+ 
+}
+
+.item-card-header{
+  text-align: center;
+  color: #686b69;
+  font-weight:100;
+  font-size: 1.5rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+}
+
+.item-card-header2{
+   border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3rem;
+  font-weight:500;
+}
+
+.item-highlighted-text{
+  color: #166037;
+}
+
+
+
+
+
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* use flex-basis instead of width to be more robust */
+.category-card {
+  box-sizing: border-box;
+  flex: 0 0 calc((100% - 60px) / 6); /* 6 items, with 12px gap => 5 gaps * 12px = 60px */
+  text-align: center;
+  min-width: 0; /* prevents overflowing from long text/images */
+}
+
+/* restore thumbnail containment */
+.thumb-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e3e5e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto ;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(16,20,24,0.06);
+}
+
+.category-thumb {
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.category-title{
+  font-size: 1.3rem;
+  font-weight:300;
+  margin-bottom: 0;
+}
+.category-count{
+  font-size: 0.99rem;
+  font-weight: 100;
+  color: #686b69;
+}
+
+
+
+
+
+/* ===== Promo cards: white left (vegetables) + yellow right (fruits) ===== */
+
+/* Container */
+.promo-row {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 18px;
+  display: flex;
+  gap: 22px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+/* Default promo card (vegetables) */
+.promo-card {
+  background: #ffffff;
+  color: #0b0b0b;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(16,24,32,0.06);
+  overflow: hidden;
+  flex: 1 1 0;
+}
+
+/* Yellow variant for specific cards (apply class promo-card--yellow to markup) */
+.promo-card--yellow {
+  background: var(--accent); /* ensure --accent is set to the yellow you want (e.g. #f2c94c) */
+  color: #0b0b0b;
+}
+
+/* Card inner layout (both variants) */
+.left-card-container,
+.right-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 26px;
+  box-sizing: border-box;
+}
+
+/* Left column (text) */
+.vegetables-promo,
+.fruits-promo {
+  width: 54%;
+  min-width: 260px;
+  text-align: left;
+}
+
+/* Discount pills */
+.flat-discount-vegetables,
+.flat-discount-fruits {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+/* Specific pill colors */
+.flat-discount-vegetables {
+  background: #f6cc45; /* yellow pill on white card */
+  color: #111;
+}
+.flat-discount-fruits {
+  background: rgba(0,0,0,0.06); /* subtle pill on yellow card */
+  color: #111;
+}
+
+/* Heading / text / CTA */
+.promo-heading {
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 44px;
+  line-height: 1.04;
+  margin: 0 0 14px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.promo-tagline {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 22px;
+  max-width: 90%;
+}
+
+/* CTA button */
+.promo-shop-btn {
+  background: #2f7a52;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(47,122,82,0.18);
+}
+
+/* Right image column */
+.promo-image {
+  width: 42%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Image sizing and overflow — different for yellow card to match reference */
+.promo-image img {
+  max-width: 410px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: inline-block;
+  transform: translateX(6%);
+  transition: none !important;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* When the image is inside the yellow card, nudge it further right for overlap */
+.promo-card--yellow .promo-image img {
+  transform: translateX(12%);
+  max-width: 460px;
+}
+
+/* Make sure hover/animation is disabled on images */
+.promo-image img:hover,
+.promo-image:hover img,
+.promo-image * {
+  transform: inherit !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Ensure heading and text contrast on yellow background */
+.promo-card--yellow .promo-heading { color: #0b0b0b; }
+.promo-card--yellow .promo-tagline { color: rgba(11,11,11,0.78); }
+.promo-card--yellow .flat-discount-fruits { background: rgba(0,0,0,0.06); color: #111; }
+
+/* Card sizing tweak — make cards slightly shorter for compact look */
+.promo-row .promo-card { min-height: 180px; }
+
+/* Responsive behavior */
+@media (max-width: 900px) {
+  .promo-row { flex-direction: column; padding: 22px; }
+  .left-card-container, .right-card-container { flex-direction: column-reverse; text-align: center; padding: 22px; gap: 18px; }
+  .vegetables-promo, .fruits-promo, .promo-image { width: 100%; }
+  .promo-image { justify-content: center; }
+  .promo-image img { transform: none; max-width: 320px; margin: 0 auto; }
+  .promo-heading { font-size: 32px; }
+  .promo-tagline { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .promo-heading { font-size: 26px; }
+  .flat-discount-vegetables, .flat-discount-fruits { font-size: 14px; padding: 6px 14px; }
+  .promo-shop-btn { width: 160px; margin: 0 auto; display: inline-block; }
+  .left-card-container, .right-card-container { padding: 16px; gap: 12px; }
+}

@@ -144,62 +144,82 @@
       </div>
    </section>
 
+   
    <!---ITEM CATEGORIES HTML-->
    <section class="item-categories">
       <div class="categories-container">
          <h3 class="item-card-header">Categories</h3>
-         <h2>Featured <span class="item-highlighted-text">Categories</span></h2>
-         <ul class="categories-grid">
-            <li class="category-card">
-               <img src="Images/Products/vegetables.png" alt="Vegetables" class="category-thumb">
+         <h2 class="item-card-header2">Featured <span class="item-highlighted-text">Categories</span></h2>
+
+         <!-- use div for grid since children will be divs -->
+         <div class="categories-grid">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/vegetables.png" alt="Vegetables" class="category-thumb">
+               </div>
                <div class="category-body">
                   <h4 class="category-title">Vegetables</h4>
                   <p class="category-count">52 products</p>
                </div>
-            </li>
+            </div>
 
-            <li class="category-card">
-               <img src="Images/Products/fruits.png" alt="Fresh Fruits" class="category-thumb">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/fruits.png" alt="Fresh Fruits" class="category-thumb">
+               </div>
                <div class="category-body">
                   <h4 class="category-title">Fresh Fruits</h4>
                   <p class="category-count">48 products</p>
                </div>
-            </li>
+            </div>
 
-            <li class="category-card">
-               <img src="Images/Products/milk.png" alt="Milk & Eggs" class="category-thumb">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/milk.png" alt="Milk & Eggs" class="category-thumb">
+               </div>
                <div class="category-body">
-                  <h4 class="category-title">Milk & Eggs</h4>
+                  <h4 class="category-title">Milk &amp; Eggs</h4>
                   <p class="category-count">12 products</p>
                </div>
-            </li>
+            </div>
 
-            <li class="category-card">
-               <img src="Images/Products/bakery.png" alt="Bakery" class="category-thumb">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/bakery.png" alt="Bakery" class="category-thumb">
+               </div>
                <div class="category-body">
                   <h4 class="category-title">Bakery</h4>
                   <p class="category-count">62 products</p>
                </div>
-            </li>
+            </div>
 
-            <li class="category-card">
-               <img src="Images/Products/household.png" alt="House Hold" class="category-thumb">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/household.png" alt="House Hold" class="category-thumb">
+               </div>
                <div class="category-body">
                   <h4 class="category-title">House Hold</h4>
                   <p class="category-count">25 products</p>
                </div>
-            </li>
+            </div>
 
-            <li class="category-card">
-               <img src="Images/Products/dryfruits.png" alt="Dry Fruits" class="category-thumb">
+            <div class="category-card">
+               <div class="thumb-wrap">
+                  <img src="Images/Products/dryfruits.png" alt="Dry Fruits" class="category-thumb">
+               </div>
                <div class="category-body">
                   <h4 class="category-title">Dry Fruits</h4>
                   <p class="category-count">8 products</p>
                </div>
-            </li>
-         </ul>
+            </div>
+         </div> <!-- .categories-grid -->
       </div>
    </section>
+
+
+
+
+   
    <section class="promo-row">
       <!---LEFT PROMO CARD-->
       <div class="left-card promo-card">
@@ -230,7 +250,7 @@
          </div>
       </div>
       <!--RIGHT PROMO CARD-->
-      <div class="promo-card right-card">
+      <div class="promo-card right-card promo-card--yellow">
          <div class="right-card-container">
 
             <div class="fruits-promo">
