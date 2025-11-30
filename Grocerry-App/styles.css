@@ -1485,3 +1485,83 @@ nav,
   .products-grid{ justify-content: center; gap:14px; }
   .product-card{ width: 100%; max-width: 360px; }
 }
+
+
+
+
+
+.discount-section{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 60px;
+}
+
+.promo-side {
+ display: flex;
+
+  
+}
+.left-image,.right-image{
+  border-radius: 20px;
+   width:220px;
+   height: 480px;
+}
+
+
+.discount-card{
+  background-image: url(Images/hero_background_pattern.png);
+  width:90%;
+  border-radius: 20px;
+  display: flex;
+ flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-wraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#discount-heading{
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: 'Gill Sans';
+  margin: 0;
+}
+
+.highlighted-discount-text{
+  color: #1f7a45;
+  font-weight: 400;
+}
+
+.discount-card-offerline{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4a5568;
+  margin-top: 10px;
+}
+
+.timer-days, .timer-hours, .timer-minutes, .timer-seconds, .timer-sep{
+  font-size: 3.5rem;
+  margin-bottom: 0;
+}
+
+.time-labels {
+  display: flex;
+  flex-direction: row;
+ 
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
