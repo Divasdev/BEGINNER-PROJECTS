@@ -651,8 +651,8 @@ nav,
   font-weight: 700;
 }
 
-.promo-tagline {
-  color: #6b7280;
+.promo-tagline-promo{
+  color:#7c7c7e;
   font-size: 16px;
   margin-bottom: 22px;
   max-width: 90%;
@@ -1560,6 +1560,129 @@ nav,
   margin-bottom: 50px;
 }
 
+.promo-wrapper{
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+
+
+
+
+.deals-promo-container{
+  background-color: #2f7a52;
+  margin: 50px auto;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;        /* allow items to wrap instead of overflowing */
+  box-sizing: border-box;
+  padding: 16px;         /* reduce padding so total width doesn't overflow */
+  overflow-x: hidden;    /* hide any tiny subpixel overflow */
+}
+
+.deal-promo{
+  display: flex;
+  flex-direction: column;
+  margin: 12px;                /* smaller margin to avoid cumulative overflow */
+  flex: 1 1 320px;             /* let cards shrink/grow; prefer min base of 320px */
+  min-width: 280px;           /* prevent becoming too small on narrow screens */
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.promo-image{
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.promo-header{
+ font-family: sans-serif;
+font-weight: 100;
+font-size: 2rem;
+color: #f2c94c;
+margin-bottom: 2px;
+}
+.promo-tagline{
+ font-size: 35px;
+ font-weight: 500;
+ color: whitesmoke;
+ margin-bottom: 0;
+ line-height: 1;
+}
+
+.highlighted-promo-text{
+  color: #f2c94c;
+  margin-bottom: 0;
+}
+
+.promo-para{
+  font-size: 18px;
+  font-weight: 200;
+  color: whitesmoke;
+}
+
+
+.promo-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2c94c;
+  color: rgb(0, 0, 0);
+  width: 120px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50px;
+  font-weight: 200;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(31, 122, 69, 0.25);
+
+}
+
+.wrap-image{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+
+.promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* ensure children wrap on narrow viewports */
+}
+
+
+
+
+
+.promo-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;            /* keep natural aspect ratio */
+  max-height: 420px;      /* prevent image from growing too tall */
+  border-radius: 40px;
+  object-fit: cover;       /* cover the box while preserving aspect ratio */
+  display: block;
+}
 
 
 

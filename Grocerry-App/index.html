@@ -234,7 +234,7 @@
                <h2 class="promo-heading">
                   Purely Fresh <br>Vegetables
                </h2>
-               <p class="promo-tagline">
+               <p class="promo-tagline-promo">
                   We deliver Fresh Vegetables directly from the farmers to Your doorstep.
                </p>
 
@@ -263,7 +263,7 @@
                   Fresh Fruits,<br>
                   Pure Quality
                </h2>
-               <p class="promo-tagline">
+               <p class="promo-tagline-promo">
                   We deliver Fresh Fruits directly from the farmers to Your doorstep.
                </p>
 
@@ -508,11 +508,11 @@
             <div class="time-labels">
                Days &nbsp; Hours &nbsp; Minutes &nbsp; Seconds</div>
          </div>
-         <a class="hero-shopnow-btn"  role="button" aria-label="Shop Fresh Vegetables and Fruits">Shop Now
-            →</a>
+         <a class="hero-shopnow-btn"  aria-label="Shop Fresh Vegetables and Fruits">Shop Now &#8594; </a>
       </div>
 
       <figure class="promo-side promo-right">
+     
          <img src="Images/Products/fruits-promo.png" alt="Woman buying fruits" width="300" loading="lazy"
             class="right-image">
 
@@ -521,44 +521,54 @@
 
 
    
-   <!---Weekly deals container-->
-   <section class="deals-promo-container" aria-label="Weekly deals promo">
+   <!-- Weekly deals container -->
+<section class="deals-promo-container" aria-label="Weekly deals promo">
+   <div class="promo-wrapper">
+
+      <!-- LEFT SIDE — TEXT -->
       <article class="deal-promo">
          <span class="promo-header"> Weekly Deals</span>
 
-
          <h2 class="promo-tagline">
-            Unbeatable Offers: Your
+            Unbeatable Offers: Your <br>
             <span class="highlighted-promo-text">Weekly Grocery Specials</span>
          </h2>
-         <p class="promo-para">Undeniable offers at GreenBasket</p>
 
-         <button class="promo-btn" type="button" aria-label="Shop weekly grocery specials">Shop Now</button>
+         <p class="promo-para">Weekly Wonders — Fresh Deals, Fresh Savings</p>
 
-
-         <!--Right Image-->
-         <figure class="promo-image" aria-hidden="true">
-
-            <img src="Images/Products/shopping basket.png" alt="Basket filled with groceries" loading="lazy" width="420"
-               height="240">
-            <figcaption class="visually-hidden">Basket filled with groceries</figcaption>
-         </figure>
+         <button class="promo-btn" type="button" aria-label="Shop weekly grocery specials">
+            Shop Now →
+         </button>
       </article>
 
-   </section>
+      <!-- RIGHT SIDE — IMAGE -->
+      <figure class="promo-image" aria-hidden="true">
+         <img src="Images/Products/shopping basket.png"
+              alt="Basket filled with groceries"
+              loading="lazy"
+                class="promo-imagee">
+      </figure>
 
+   </div>
+</section>
 
 
 
    <!---BEST SELLER PRODUCTS-->
-   <section class="products-section">
-      <h4 class="products">
-         Products
-      </h4>
-      <h2 class="featured-products">Featured <span class="highlight-products">Products</span></h2>
-      <button class="view-btn">
-         View All Products &#8594;
-      </button>
+ <section class="products-section">
+      <div class="products-wrap">
+         <div class="product-text">
+            <h4 class="products">
+               Best Seller 
+            </h4>
+            <h2 class="featured-products">Best Seller<span class="highlight-products">Products</span></h2>
+         </div>
+
+         <button class="view-btn">
+            View All Products &#8594;
+         </button>
+
+      </div>
 
 
       <div class="products-grid">
@@ -566,7 +576,7 @@
             <figure class="product-media">
                <img src="Images/Products/strawberry-isolated-white-background-close-up.jpg"
                   alt="Fresh strawberries in a bowl-500g" class="product-image" width="400" height="300">
-               <figcaption class="visually-hidden">Fresh strawberry - 500g</figcaption>
+
             </figure>
             <div class="product-toprow">
                <span class="product-badge">
@@ -575,13 +585,15 @@
 
 
                   <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon-productscard"
-                     alt="wishlisticon">
+                     alt="wishlisticon" width="30">
                </button>
 
             </div>
             <div class="product-body">
-               <p class="product-type">Fruits</p>
-               <span class="product-rating"> ⭐️ 4.8</span>
+               <div class="fruits-rating">
+                  <p class="product-type">Fruits</p>
+                  <span class="product-rating"> ⭐️ 4.8</span>
+               </div>
 
                <h3 class="product-name">Fresh strawberry</h3>
                <p class="product-quantity">500g</p>
@@ -590,64 +602,24 @@
                      $8.00 </strong>
 
                   <span class="product-oldprice">$10.00</span>
+
+                  <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
+                     <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
+
+
+                     <span class="product-add">Add</span>
+                  </button>
                </div>
-            </div>
-            <div class="product-actions">
-               <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
-                  <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
-                  <span class="product-add">Add</span>
-               </button>
-
 
             </div>
-         </article>
 
-
-         <article class="product-card" aria-label="Fresh strawberry-500g">
-            <figure class="product-media">
-               <img src="Images/Products/strawberry-isolated-white-background-close-up.jpg"
-                  alt="Fresh strawberries in a bowl-500g" class="product-image" width="400" height="300">
-               <figcaption class="visually-hidden">Fresh strawberry - 500g</figcaption>
-            </figure>
-            <div class="product-toprow">
-               <span class="product-badge">
-                  20% off</span>
-               <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add to wishlist">
-
-
-                  <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon-productscard"
-                     alt="wishlisticon">
-               </button>
-
-            </div>
-            <div class="product-body">
-               <p class="product-type">Fruits</p>
-               <span class="product-rating"> ⭐️ 4.8</span>
-
-               <h3 class="product-name">Fresh strawberry</h3>
-               <p class="product-quantity">500g</p>
-               <div class="product-price-wrap">
-                  <strong class="product-price">
-                     $8.00 </strong>
-
-                  <span class="product-oldprice">$10.00</span>
-               </div>
-            </div>
-            <div class="product-actions">
-               <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
-                  <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
-                  <span class="product-add">Add</span>
-               </button>
-
-
-            </div>
          </article>
 
          <article class="product-card" aria-label="Fresh strawberry-500g">
             <figure class="product-media">
                <img src="Images/Products/strawberry-isolated-white-background-close-up.jpg"
                   alt="Fresh strawberries in a bowl-500g" class="product-image" width="400" height="300">
-               <figcaption class="visually-hidden">Fresh strawberry - 500g</figcaption>
+
             </figure>
             <div class="product-toprow">
                <span class="product-badge">
@@ -656,13 +628,15 @@
 
 
                   <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon-productscard"
-                     alt="wishlisticon">
+                     alt="wishlisticon" width="30">
                </button>
 
             </div>
             <div class="product-body">
-               <p class="product-type">Fruits</p>
-               <span class="product-rating"> ⭐️ 4.8</span>
+               <div class="fruits-rating">
+                  <p class="product-type">Fruits</p>
+                  <span class="product-rating"> ⭐️ 4.8</span>
+               </div>
 
                <h3 class="product-name">Fresh strawberry</h3>
                <p class="product-quantity">500g</p>
@@ -671,20 +645,107 @@
                      $8.00 </strong>
 
                   <span class="product-oldprice">$10.00</span>
+
+                  <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
+                     <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
+
+
+                     <span class="product-add">Add</span>
+                  </button>
                </div>
+
             </div>
-            <div class="product-actions">
-               <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
-                  <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
-                  <span class="product-add">Add</span>
+
+         </article>
+
+         <article class="product-card" aria-label="Fresh strawberry-500g">
+            <figure class="product-media">
+               <img src="Images/Products/strawberry-isolated-white-background-close-up.jpg"
+                  alt="Fresh strawberries in a bowl-500g" class="product-image" width="400" height="300">
+
+            </figure>
+            <div class="product-toprow">
+               <span class="product-badge">
+                  20% off</span>
+               <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add to wishlist">
+
+
+                  <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon-productscard"
+                     alt="wishlisticon" width="30">
                </button>
 
+            </div>
+            <div class="product-body">
+               <div class="fruits-rating">
+                  <p class="product-type">Fruits</p>
+                  <span class="product-rating"> ⭐️ 4.8</span>
+               </div>
+
+               <h3 class="product-name">Fresh strawberry</h3>
+               <p class="product-quantity">500g</p>
+               <div class="product-price-wrap">
+                  <strong class="product-price">
+                     $8.00 </strong>
+
+                  <span class="product-oldprice">$10.00</span>
+
+                  <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
+                     <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
+
+
+                     <span class="product-add">Add</span>
+                  </button>
+               </div>
 
             </div>
+
+         </article>
+         <article class="product-card" aria-label="Fresh strawberry-500g">
+            <figure class="product-media">
+               <img src="Images/Products/strawberry-isolated-white-background-close-up.jpg"
+                  alt="Fresh strawberries in a bowl-500g" class="product-image" width="400" height="300">
+
+            </figure>
+            <div class="product-toprow">
+               <span class="product-badge">
+                  20% off</span>
+               <button class="wishlist-btn" type="button" aria-pressed="false" aria-label="Add to wishlist">
+
+
+                  <img src="Images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon-productscard"
+                     alt="wishlisticon" width="30">
+               </button>
+
+            </div>
+            <div class="product-body">
+               <div class="fruits-rating">
+                  <p class="product-type">Fruits</p>
+                  <span class="product-rating"> ⭐️ 4.8</span>
+               </div>
+
+               <h3 class="product-name">Fresh strawberry</h3>
+               <p class="product-quantity">500g</p>
+               <div class="product-price-wrap">
+                  <strong class="product-price">
+                     $8.00 </strong>
+
+                  <span class="product-oldprice">$10.00</span>
+
+                  <button class="product-addtocart" type="button" aria-label="Add Fresh strawberry to cart">
+                     <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart icon">
+
+
+                     <span class="product-add">Add</span>
+                  </button>
+               </div>
+
+            </div>
+
          </article>
 
       </div>
    </section>
+
 
    <!-- TESTIMONIALS SECTION -->
    <section class="testimonials-section" aria-label="Customer testimonials">
