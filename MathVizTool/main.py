@@ -1,15 +1,11 @@
-import customtkinter as ctk
-from ui_components import Sidebar, PlotArea
-from math_engine import MathEngine
 
 
 
 
-    def __init__(self):
+
+
         super().__init__()
 
-        self.title("MathVizTool - Linear Algebra & Calculus Visualization")
-        self.geometry("1100x700")
 
         # Layout
         self.grid_columnconfigure(1, weight=1)
