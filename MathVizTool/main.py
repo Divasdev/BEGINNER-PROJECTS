@@ -5,7 +5,6 @@ from math_engine import MathEngine
 
 
 
-class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
