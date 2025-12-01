@@ -3,7 +3,7 @@ from ui_components import Sidebar, PlotArea
 from math_engine import MathEngine
 
 
-ctk.set_default_color_theme("blue")
+
 
 class App(ctk.CTk):
     def __init__(self):
