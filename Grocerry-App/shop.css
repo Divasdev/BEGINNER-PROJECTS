@@ -323,3 +323,35 @@ nav,
   color: #166037;
   font-size: 12px;
 }
+
+/*SHOP-HERO section*/
+
+.hero-section{
+   background-image: url(Images/hero_background_pattern.png);
+
+}
+
+.hero-wrapper{
+   text-align: center;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   line-height: 2px;
+
+   font-weight: 100;
+}
+
+.hero-header  
+   
+{
+   font-size: 2rem;
+
+   font-weight: 100;
+   font-family:'Times New Roman', Times, serif;
+}
+.hero-sub-header{
+font-weight: 200;
+font-size: 1rem;
+}
