@@ -115,15 +115,99 @@
       </div>
    </section>
 
+
+
+   <!--Main container -->
    <section class="shop-body">
       <!--Left side(filter options)-->
+
       <article class="shop-sidebar">
+         <div class="side-bar">
+            <h3 class="filter-options">Filter Options</h3>
+
+            <h4 class="category-sidebar">Category</h4>
+            <ul class="category-list" style="list-style: none; padding-left: 0;">
+               <li><input type="checkbox" name="category" value="vegetables"> Vegetables</li>
+               <li><label><input type="checkbox" name="category" value="fruits"> Fresh Fruits</label></li>
+               <li><label><input type="checkbox" name="category" value="milk-eggs"> Milk &amp; Eggs</label></li>
+               <li><label><input type="checkbox" name="category" value="bakery"> Bakery</label></li>
+               <li><label><input type="checkbox" name="category" value="household"> House Hold</label></li>
+               <li><label><input type="checkbox" name="category" value="dry-fruits"> Dry Fruits</label></li>
+               <li><label><input type="checkbox" name="category" value="drinks"> Drinks</label></li>
+            </ul>
+
+            <div class="price-wrap">
+               <h4 class="filter-price">Price</h4>
+               <!-- use numeric min/max for range -->
+               <input type="range" min="10" max="1000" step="1" aria-label="Price range">
+            </div>
+
+            <div class="review-wrap">
+               <h4>Review</h4>
+               <ul class="review-list" style="list-style: none; padding-left: 0;">
+                  <li><label><input type="checkbox" name="review" value="5"> 5 star</label></li>
+                  <li><label><input type="checkbox" name="review" value="4"> 4 star</label></li>
+                  <li><label><input type="checkbox" name="review" value="3"> 3 star</label></li>
+                  <li><label><input type="checkbox" name="review" value="2"> 2 star</label></li>
+                  <li><label><input type="checkbox" name="review" value="1"> 1 star</label></li>
+               </ul>
+            </div>
+
+            <div class="brand-wrap">
+               <h4>Brand</h4>
+               <ul class="brand-list" style="list-style: none; padding-left: 0;">
+                  <li><label><input type="checkbox" name="brand" value="FreshHarvest"> FreshHarvest</label></li>
+                  <li><label><input type="checkbox" name="brand" value="NaturesBest"> Nature's Best</label></li>
+                  <li><label><input type="checkbox" name="brand" value="GoodGrains"> GoodGrains</label></li>
+                  <li><label><input type="checkbox" name="brand" value="FarmFresh"> FarmFresh</label></li>
+                  <li><label><input type="checkbox" name="brand" value="Greengrocer"> Greengrocer</label></li>
+               </ul>
+
+               <div class="product-type-wrap">
+                  <h4>Product Type</h4>
+                  <ul class="product-type-list" style="list-style: none; padding-left: 0;">
+                     <li><label><input type="checkbox" name="product_type" value="packaged"> Packaged Goods</label></li>
+                     <li><label><input type="checkbox" name="product_type" value="fresh"> Fresh Produce</label></li>
+                     <li><label><input type="checkbox" name="product_type" value="frozen"> Frozen Foods</label></li>
+                  </ul>
+               </div>
+
+               <div class="avail-wrap">
+                  <h4>Availability</h4>
+                  <ul class="avail-list" style="list-style: none; padding-left: 0;">
+                     <li><label><input type="checkbox" name="availability" value="in-stock"> In stock</label></li>
+                     <li><label><input type="checkbox" name="availability" value="out-of-stock"> Out of stock</label>
+                     </li>
+                  </ul>
+               </div>
+
+            </div> <!-- end brand-wrap -->
+
+         </div> <!-- end side-bar -->
       </article>
+
+
       <!--Right side(products)-->
-      <article class="shop-main"></article>
+      <article class="shop-main">
+         <div class="shop-toprow">
+            <p>Showing 1-12 of 2560 results</p>
+            <div class="toprow-sort">
+               <span>Sort by:</span>
+               <button class="default-sort">Default Sorting<span class="caret">▾</span></button>
+            </div>
+
+            <div class="shop-secondrow">
+               <p>Active Filter </p>
+               <button> Price:$25.00-$125.00 &#10005; </button>
+               <button> 5 Star &#10005; </button>
+               <button> In stock &#10005; </button>
+               <a href="#">Clear All</a>
+            </div>
+
+      </article>
    </section>
 
-   
+
 
 </body>
 

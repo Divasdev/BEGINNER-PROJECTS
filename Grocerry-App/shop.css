@@ -355,3 +355,25 @@ nav,
 font-weight: 200;
 font-size: 1rem;
 }
+
+
+.shop-body{
+  display: flex;
+}
+
+.side-bar{
+  width: 400px;
+  background-color: aliceblue;
+}
+.shop-main{
+  display: flex;
+  
+}
+
+.shop-toprow{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
