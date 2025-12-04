@@ -138,18 +138,23 @@
 
             <div class="price-wrap">
                <h4 class="filter-price">Price</h4>
-               <!-- use numeric min/max for range -->
-               <input type="range" min="10" max="1000" step="1" aria-label="Price range">
+               <p class="price-range-text">$25.00 - $125.00</p>
+               <input type="range" min="25" max="125" step="1" aria-label="Price range" value="50">
             </div>
 
             <div class="review-wrap">
                <h4>Review</h4>
                <ul class="review-list" style="list-style: none; padding-left: 0;">
-                  <li><label><input type="checkbox" name="review" value="5"> 5 star</label></li>
-                  <li><label><input type="checkbox" name="review" value="4"> 4 star</label></li>
-                  <li><label><input type="checkbox" name="review" value="3"> 3 star</label></li>
-                  <li><label><input type="checkbox" name="review" value="2"> 2 star</label></li>
-                  <li><label><input type="checkbox" name="review" value="1"> 1 star</label></li>
+                  <li><label><input type="checkbox" name="review" value="5" checked> <span
+                           class="star-rating">★★★★★</span> 5 Star</label></li>
+                  <li><label><input type="checkbox" name="review" value="4"> <span class="star-rating">★★★★☆</span> 4
+                        Star</label></li>
+                  <li><label><input type="checkbox" name="review" value="3"> <span class="star-rating">★★★☆☆</span> 3
+                        Star</label></li>
+                  <li><label><input type="checkbox" name="review" value="2"> <span class="star-rating">★★☆☆☆</span> 2
+                        Star</label></li>
+                  <li><label><input type="checkbox" name="review" value="1"> <span class="star-rating">★☆☆☆☆</span> 1
+                        Star</label></li>
                </ul>
             </div>
 
@@ -588,8 +593,121 @@
 
             </article>
          </div>
+
+
       </article>
    </section>
+
+
+   <!--Footer section -->
+   <!--Newsletter section-->
+   <section class="newsletter" aria-label="Subscribe to our newsletter">
+      <div class="container newsletter-container">
+         <article class="newsletter-contains">
+            <h3 class="header-newsletter">Our Newsletter</h3>
+            <h2 class="newsletter-header">
+               Subscribe to our Newsletter to <br> Get <span class="highlight-text-newsletter">Updates on Our Latest
+                  Offers</span>
+            </h2>
+
+            <p class="newsletter-promo">Get 25% off on your first order by subscribing to our newsletter</p>
+
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+
+               <input id="newsletter-email" name="email" type="email" class="newsletter-input"
+                  placeholder="Enter Email Address" required aria-required="true" autocomplete="email">
+
+               <button type="submit" class="subs-btn" aria-label="Subscribe to newsletter">Subscribe</button>
+
+               <div id="newsletterStatus" class="newsletter-status" role="status" aria-live="polite"></div>
+            </form>
+         </article>
+      </div>
+   </section>
+
+
+
+
+   <!-- SITE FOOTER -->
+   <footer class="site-footer" role="contentinfo" aria-label="Footer">
+      <div class="container footer-container">
+         <div class="footer-top">
+            <div class="footer-brand">
+               <img src="Images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="GreenBasket logo" class="footer-logo"
+                  width="48" height="48">
+               <div class="brand-text">
+                  <strong class="brand-name">GreenBasket.</strong>
+                  <p class="brand-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna.</p>
+                  <div class="social-icons">
+                     <a href="#" aria-label="Facebook"><img src="Images/HubSpot Brand Kit/Logo/JPEG/facebook.png"
+                           alt="facebook" width="28" height="28"></a>
+                     <a href="#" aria-label="Twitter"><img src="Images/HubSpot Brand Kit/Logo/JPEG/twitter.png"
+                           alt="twitter" width="28" height="28"></a>
+                     <a href="#" aria-label="Instagram"><img src="Images/HubSpot Brand Kit/Logo/JPEG/instagram.png"
+                           alt="instagram" width="28" height="28"></a>
+                     <a href="#" aria-label="Pinterest"><img src="Images/HubSpot Brand Kit/Logo/JPEG/pinterest.png"
+                           alt="pinterest" width="28" height="28"></a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer-links">
+               <div class="footer-col">
+                  <h4>Company</h4>
+                  <ul>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Blog</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Careers</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-col">
+                  <h4>Customer Services</h4>
+                  <ul>
+                     <li><a href="#">My Account</a></li>
+                     <li><a href="#">Track Your Order</a></li>
+                     <li><a href="#">Returns</a></li>
+                     <li><a href="#">FAQ</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-col">
+                  <h4>Our Information</h4>
+                  <ul>
+                     <li><a href="#">Privacy</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                     <li><a href="#">Return Policy</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-col contact-col">
+                  <h4>Contact Info</h4>
+                  <address>
+                     <p>+0123-456-789</p>
+                     <p>example@gmail.com</p>
+                     <p>8502 Preston Rd.<br>Inglewood, Maine 98380</p>
+                  </address>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer-bottom">
+            <p>Copyright © 2024 <strong>GreenBasket</strong> Website Design. All Rights Reserved.</p>
+            <div class="footer-controls">
+               <select aria-label="Language selector" class="footer-select">
+                  <option>English</option>
+                  <option>Español</option>
+               </select>
+               <select aria-label="Currency selector" class="footer-select">
+                  <option>USD</option>
+
+               </select>
+            </div>
+         </div>
+      </div>
+   </footer>
 
 
 
