@@ -4,300 +4,240 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cart - GreenBasket</title>
+   <title>Shop-GreenBasket</title>
    <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" href="assets/css/shop.css">
    <script src="assets/js/scripts.js" defer></script>
+   <!--LINK TO GOOGLE FONTS-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet">
-   <style>
-      .cart-container {
-         max-width: 1200px;
-         margin: 40px auto;
-         padding: 0 20px;
-      }
 
-      .cart-table {
-         width: 100%;
-         border-collapse: collapse;
-         margin-bottom: 30px;
-      }
-
-      .cart-table th {
-         text-align: left;
-         padding: 15px;
-         background: #f9f9f9;
-         border-bottom: 1px solid #eee;
-         font-family: "Poppins", sans-serif;
-         font-weight: 600;
-      }
-
-      .cart-table td {
-         padding: 20px 15px;
-         border-bottom: 1px solid #eee;
-         vertical-align: middle;
-      }
-
-      .product-col {
-         display: flex;
-         align-items: center;
-         gap: 15px;
-      }
-
-      .product-col img {
-         width: 80px;
-         height: 80px;
-         object-fit: contain;
-         border: 1px solid #eee;
-         border-radius: 8px;
-      }
-
-      .quantity-control {
-         display: flex;
-         align-items: center;
-         gap: 10px;
-         border: 1px solid #ddd;
-         width: fit-content;
-         padding: 5px 10px;
-         border-radius: 20px;
-      }
-
-      .qty-btn {
-         background: none;
-         border: none;
-         cursor: pointer;
-         font-size: 16px;
-      }
-
-      .cart-summary {
-         background: #f9f9f9;
-         padding: 30px;
-         border-radius: 12px;
-         max-width: 400px;
-         margin-left: auto;
-      }
-
-      .summary-row {
-         display: flex;
-         justify-content: space-between;
-         margin-bottom: 15px;
-         font-size: 15px;
-      }
-
-      .summary-total {
-         font-weight: 700;
-         font-size: 18px;
-         border-top: 1px solid #ddd;
-         padding-top: 15px;
-         margin-top: 15px;
-      }
-
-      .checkout-btn {
-         width: 100%;
-         background: #1f7a45;
-         color: white;
-         border: none;
-         padding: 15px;
-         border-radius: 30px;
-         font-weight: 600;
-         cursor: pointer;
-         margin-top: 20px;
-         font-size: 16px;
-      }
-
-      .checkout-btn:hover {
-         background: #166037;
-      }
-   </style>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <!-- Header (Copied from shop.html) -->
-   <header class="site-header">
-      <div class="header-top">
-         <div class="container header-container">
-            <div class="location-selector">
-               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/location-pin.png" alt="Location" width="16"
-                  height="16">
-               <span>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
-            </div>
-            <div class="user-actions">
-               <a href="#">Sign In</a>
-               <span>/</span>
-               <a href="#">Sign Up</a>
-            </div>
+   <!--Header Section -->
+   <header>
+      <!--- TOP HEADER-->
+      <div class="topmost-div">
+         <span class="call-us">Call-Us-:+91 7005869756</span>
+         <span class="promo-tag">Sign up and GET 25% OFF for your first order. <a href="" class="signuplink">Sign Up
+               now</a></span>
+         <div class="social-links">
+            <a href=""><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/facebook.png" class="facebook-logo"
+                  alt="facebook"></a>
+            <a href=""><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/instagram.png" class="instagram-logo"
+                  alt="instagram"></a>
+            <a href=""><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/twitter.png" class="twitter-logo" alt="twitter"></a>
          </div>
       </div>
 
-      <div class="header-main">
-         <div class="container header-main-container">
-            <a href="index.html" class="logo">
-               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="GreenBasket Logo" width="40"
-                  height="40">
-               <span class="logo-text">GreenBasket</span>
-            </a>
+      <div class="header-container">
 
-            <div class="search-bar">
-               <input type="search" placeholder="Search" aria-label="Search products">
-               <button type="submit" aria-label="Search">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/SVG/search.png" alt="Search" width="20" height="20">
-               </button>
-            </div>
+         <!-- LEFT: logo + location -->
+         <div class="header-left">
+            <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="logosvg" alt="logo">
+            <h1 class="logo">GreenBasket</h1>
 
-            <div class="header-cart">
-               <a href="cart.html" class="cart-icon" aria-label="View Cart">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-cart.png" alt="Cart" width="28"
-                     height="28">
-               </a>
-               <div class="cart-info">
-                  <span class="cart-label">Shopping Cart:</span>
-                  <span class="cart-total">$57.00</span>
-               </div>
+            <div class="location-box">
+               <label class="location-label" for="location-select">Location</label>
+               <select id="location-select" class="location-select">
+                  <option>New York, USA</option>
+                  <option>Los Angeles, USA</option>
+                  <option>Chicago, USA</option>
+               </select>
             </div>
          </div>
-      </div>
 
-      <nav class="main-nav">
-         <div class="container nav-container">
+         <!-- CENTER: search bar -->
+         <div class="search-area">
+            <img src="assets/images/HubSpot Brand Kit/Logo/SVG/search.png" class="search-icon" alt="search">
+            <input type="text" class="search-input" placeholder="Search for products" aria-label="Search products">
+         </div>
+
+         <!-- RIGHT: icons -->
+         <div class="header-right">
+            <img src="assets/images/HubSpot Brand Kit/Logo/SVG/e-commerce.png" class="wishlisticon" alt="wishlist">
+            <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" class="carticon" alt="cart">
+            <img class="usericon" src="assets/images/HubSpot Brand Kit/Logo/SVG/user.png" alt="user">
+         </div>
+      </div> <!-- end of header-container -->
+      <!--header bootom row-->
+      <section class="bottom-header-container">
+         <div class="browsediv">
+            <button class="browse"><img src="assets/images/HubSpot Brand Kit/Logo/SVG/more.png" width="20px">Browse All
+               Categories</button>
+         </div>
+
+         <nav class="bottom-nav">
             <ul class="nav-list">
                <li><a href="index.html">Home</a></li>
                <li><a href="shop.html">Shop</a></li>
-               <li><a href="#">Pages</a></li>
-               <li><a href="#">Blog</a></li>
+               <li><a href="#">Fruits</a></li>
+               <li><a href="#">Vegetables</a></li>
+               <li><a href="#">Beverages</a></li>
                <li><a href="#">About Us</a></li>
-               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Blogs</a></li>
             </ul>
-            <a href="#" class="phone-contact">
-               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/phone-call.png" alt="Phone" width="20" height="20">
-               (219) 555-0114
-            </a>
+         </nav>
+         <!-- Recently viewed dropdown -->
+         <div class="recently-viewed">
+            <button class="recent-btn">Recently Viewed <span class="caret">▾</span></button>
+            <div class="recent-dropdown">
+               <ul class="recent-list">
+                  <li class="recent-item">
+                     <img src="assets/images/Products/apple.png" alt="Apple" class="recent-thumb">
+                     <div class="recent-meta"><strong>Red Apple</strong><span class="price">₹45 / kg</span></div>
+                  </li>
+                  <li class="recent-item">
+                     <img src="assets/images/Products/tomato.png" alt="Tomato" class="recent-thumb">
+                     <div class="recent-meta"><strong>Tomato</strong><span class="price">₹30 / kg</span></div>
+                  </li>
+                  <li class="recent-item">
+                     <img src="assets/images/Products/milk.png" alt="Milk" class="recent-thumb">
+                     <div class="recent-meta"><strong>Milk (1L)</strong><span class="price">₹60</span></div>
+                  </li>
+               </ul>
+            </div>
          </div>
-      </nav>
+      </section>
+
    </header>
 
-   <!-- Hero Section -->
+   <!--Hero Section for shop page  -->
    <section class="hero-section">
       <div class="hero-wrapper">
-         <h3 class="hero-header">My Cart</h3>
-         <h4 class="hero-sub-header">Home/Cart</h4>
+         <h3 class="hero-header">Shopping Cart</h3>
+         <h4 class="hero-sub-header">Home/Shoping Cart</h4>
       </div>
    </section>
 
-   <!-- Cart Content -->
-   <div class="cart-container">
-      <table class="cart-table">
-         <thead>
-            <tr>
-               <th>Product</th>
-               <th>Price</th>
-               <th>Quantity</th>
-               <th>Subtotal</th>
-               <th></th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>
-                  <div class="product-col">
-                     <img src="assets/images/Products/strawberry-isolated-white-background-close-up.jpg"
-                        alt="Strawberry">
-                     <div>
-                        <strong>Fresh Strawberry</strong>
-                        <p style="color: #666; font-size: 13px;">500g</p>
-                     </div>
-                  </div>
-               </td>
-               <td>$8.00</td>
-               <td>
-                  <div class="quantity-control">
-                     <button class="qty-btn">-</button>
-                     <span>2</span>
-                     <button class="qty-btn">+</button>
-                  </div>
-               </td>
-               <td>$16.00</td>
-               <td><button style="border:none; background:none; cursor:pointer;">&#10005;</button></td>
-            </tr>
-            <tr>
-               <td>
-                  <div class="product-col">
-                     <img src="assets/images/Products/tomato.png" alt="Tomato">
-                     <div>
-                        <strong>Fresh Tomato</strong>
-                        <p style="color: #666; font-size: 13px;">500g</p>
-                     </div>
-                  </div>
-               </td>
-               <td>$5.00</td>
-               <td>
-                  <div class="quantity-control">
-                     <button class="qty-btn">-</button>
-                     <span>1</span>
-                     <button class="qty-btn">+</button>
-                  </div>
-               </td>
-               <td>$5.00</td>
-               <td><button style="border:none; background:none; cursor:pointer;">&#10005;</button></td>
-            </tr>
-         </tbody>
-      </table>
 
-      <div class="cart-summary">
-         <h3 style="margin-bottom: 20px; font-family: 'Poppins', sans-serif;">Cart Total</h3>
-         <div class="summary-row">
-            <span>Subtotal:</span>
-            <span>$21.00</span>
-         </div>
-         <div class="summary-row">
-            <span>Shipping:</span>
-            <span>Free</span>
-         </div>
-         <div class="summary-row summary-total">
-            <span>Total:</span>
-            <span style="color: #1f7a45;">$21.00</span>
-         </div>
-         <button class="checkout-btn" onclick="window.location.href='address.html'">Proceed to Checkout</button>
+
+  
+
+
+   <!--Footer section -->
+   <!--Newsletter section-->
+   <section class="newsletter" aria-label="Subscribe to our newsletter">
+      <div class="container newsletter-container">
+         <article class="newsletter-contains">
+            <h3 class="header-newsletter">Our Newsletter</h3>
+            <h2 class="newsletter-header">
+               Subscribe to our Newsletter to <br> Get <span class="highlight-text-newsletter">Updates on Our Latest
+                  Offers</span>
+            </h2>
+
+            <p class="newsletter-promo">Get 25% off on your first order by subscribing to our newsletter</p>
+
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+
+               <input id="newsletter-email" name="email" type="email" class="newsletter-input"
+                  placeholder="Enter Email Address" required aria-required="true" autocomplete="email">
+
+               <button type="submit" class="subs-btn" aria-label="Subscribe to newsletter">Subscribe</button>
+
+               <div id="newsletterStatus" class="newsletter-status" role="status" aria-live="polite"></div>
+            </form>
+         </article>
       </div>
-   </div>
+   </section>
 
-   <!-- Footer (Copied from shop.html) -->
+
+
+
+   <!-- SITE FOOTER -->
    <footer class="site-footer" role="contentinfo" aria-label="Footer">
       <div class="container footer-container">
          <div class="footer-top">
             <div class="footer-brand">
-               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="GreenBasket logo"
-                  class="footer-logo" width="48" height="48">
+               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/shopping-bag.png" alt="GreenBasket logo" class="footer-logo"
+                  width="48" height="48">
                <div class="brand-text">
                   <strong class="brand-name">GreenBasket.</strong>
                   <p class="brand-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                      incididunt ut labore et dolore magna.</p>
+                  <div class="social-icons">
+                     <a href="#" aria-label="Facebook"><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/facebook.png"
+                           alt="facebook" width="28" height="28"></a>
+                     <a href="#" aria-label="Twitter"><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/twitter.png"
+                           alt="twitter" width="28" height="28"></a>
+                     <a href="#" aria-label="Instagram"><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/instagram.png"
+                           alt="instagram" width="28" height="28"></a>
+                     <a href="#" aria-label="Pinterest"><img src="assets/images/HubSpot Brand Kit/Logo/JPEG/pinterest.png"
+                           alt="pinterest" width="28" height="28"></a>
+                  </div>
                </div>
             </div>
+
             <div class="footer-links">
                <div class="footer-col">
                   <h4>Company</h4>
                   <ul>
                      <li><a href="#">About Us</a></li>
+                     <li><a href="#">Blog</a></li>
                      <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Careers</a></li>
                   </ul>
                </div>
+
                <div class="footer-col">
-                  <h4>Account</h4>
+                  <h4>Customer Services</h4>
                   <ul>
-                     <li><a href="orders.html">My Orders</a></li>
-                     <li><a href="cart.html">My Cart</a></li>
+                     <li><a href="#">My Account</a></li>
+                     <li><a href="#">Track Your Order</a></li>
+                     <li><a href="#">Returns</a></li>
+                     <li><a href="#">FAQ</a></li>
                   </ul>
+               </div>
+
+               <div class="footer-col">
+                  <h4>Our Information</h4>
+                  <ul>
+                     <li><a href="#">Privacy</a></li>
+                     <li><a href="#">Terms & Conditions</a></li>
+                     <li><a href="#">Return Policy</a></li>
+                  </ul>
+               </div>
+
+               <div class="footer-col contact-col">
+                  <h4>Contact Info</h4>
+                  <address>
+                     <p>+0123-456-789</p>
+                     <p>example@gmail.com</p>
+                     <p>8502 Preston Rd.<br>Inglewood, Maine 98380</p>
+                  </address>
                </div>
             </div>
          </div>
+
          <div class="footer-bottom">
-            <p>Copyright © 2024 <strong>GreenBasket</strong>. All Rights Reserved.</p>
+            <p>Copyright © 2024 <strong>GreenBasket</strong> Website Design. All Rights Reserved.</p>
+            <div class="footer-controls">
+               <select aria-label="Language selector" class="footer-select">
+                  <option>English</option>
+                  <option>Español</option>
+               </select>
+               <select aria-label="Currency selector" class="footer-select">
+                  <option>USD</option>
+
+               </select>
+            </div>
          </div>
       </div>
    </footer>
+
+
+
+
+
+
+
 </body>
 
 </html>
