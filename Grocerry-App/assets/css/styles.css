@@ -173,6 +173,31 @@ nav,
   transition: 0.2s;
 }
 
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #efae09;
+  /* Using the yellow accent color from header */
+  color: #000;
+  font-size: 10px;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+
 .header-right img:hover {
   transform: scale(1.1);
 }
@@ -335,7 +360,7 @@ nav,
   position: relative;
   min-height: 85vh;
   background-color: #fcfcfc;
-  background-image: url('/Users/divassharma/Desktop/BEGINNER-PROJECTS/Grocerry-App/assets/images/hero_background_pattern.png');
+  background-image: url('../images/hero_background_pattern.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2356,16 +2381,16 @@ nav,
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .footer-brand {
     max-width: 100%;
     text-align: center;
   }
-  
+
   .social-icons {
     justify-content: center;
   }
-  
+
   .footer-links {
     justify-content: center;
     text-align: center;
@@ -2377,7 +2402,7 @@ nav,
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;

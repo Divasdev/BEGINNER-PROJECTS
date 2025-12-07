@@ -326,12 +326,18 @@ nav,
 
 /* ===== HERO SECTION ===== */
 .hero-section {
-  background-image: url(/Users/divassharma/Desktop/BEGINNER-PROJECTS/Grocerry-App/assets/images/hero_background_pattern.png);
+  background-image: url('../images/hero_background_pattern.png');
   background-size: cover;
   background-position: center;
-  padding: 60px 0;
+  padding: 40px 0;
   text-align: center;
   margin-bottom: 40px;
+  min-height: auto;
+  /* Override styles.css */
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-wrapper {
@@ -348,6 +354,7 @@ nav,
   color: #1f7a45;
   margin: 0 0 10px;
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
 .hero-sub-header {
@@ -361,7 +368,7 @@ nav,
 .shop-body {
   display: flex;
   max-width: 1300px;
-  margin: 0 auto 60px;
+  margin: 0 auto 20px;
   /* Removed top margin as hero has padding */
   padding: 0 20px;
   gap: 40px;
@@ -1051,9 +1058,14 @@ nav,
 }
 
 .newsletter {
-  background-image: url(Images/hero_background_pattern.png);
+  background-image: url('../images/hero_background_pattern.png');
+  /* Correct relative path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 100px;
+  padding: 80px 20px;
+  /* Adjusted padding */
 }
 
 .header-newsletter {
