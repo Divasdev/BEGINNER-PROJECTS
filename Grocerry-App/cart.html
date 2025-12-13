@@ -7,6 +7,7 @@
    <title>Shop-GreenBasket</title>
    <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" href="assets/css/shop.css">
+   <link rel="stylesheet" href="assets/css/cart.css"> <!-- Added specific cart css -->
    <script src="assets/js/scripts.js" defer></script>
    <!--LINK TO GOOGLE FONTS-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -114,17 +115,156 @@
    </header>
 
    <!--Hero Section for shop page  -->
+   <!-- Reusing the shop hero style but with different content -->
    <section class="hero-section">
       <div class="hero-wrapper">
          <h3 class="hero-header">Shopping Cart</h3>
-         <h4 class="hero-sub-header">Home/Shoping Cart</h4>
+         <h4 class="hero-sub-header">Home / Shopping Cart</h4>
       </div>
    </section>
 
 
+   <!-- CART SECTION -->
+   <section class="cart-wrapper">
 
+      <!-- LEFT SIDE: Product List -->
+      <div class="cart-left-section">
 
+         <!-- Header Row -->
+         <div class="cart-header">
+            <span class="cart-col-product">Product</span>
+            <span class="cart-col-price">Price</span>
+            <span class="cart-col-quantity">Quantity</span>
+            <span class="cart-col-subtotal">Subtotal</span>
+         </div>
 
+         <!-- Cart Items List -->
+         <div class="cart-list">
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+               <button class="remove-btn" aria-label="Remove item">×</button>
+
+               <div class="cart-product-info">
+                  <!-- Fixed: using src instead of href for img -->
+                  <img src="assets/images/Products/almond-milk.png" alt="Fresh Oranges" class="cart-item-img">
+                  <div class="cart-item-details">
+                     <span class="cart-item-name">Fresh Oranges</span>
+                     <span class="cart-item-weight">500g</span> <!-- Added weight class -->
+                  </div>
+               </div>
+
+               <span class="cart-item-price">$11.75</span>
+
+               <div class="cart-quantity-control">
+                  <button class="qty-btn minus">−</button>
+                  <input type="number" value="4" class="qty-input" min="1">
+                  <button class="qty-btn plus">+</button>
+               </div>
+
+               <span class="cart-item-subtotal">$47.00</span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+               <button class="remove-btn" aria-label="Remove item">×</button>
+
+               <div class="cart-product-info">
+                  <img src="assets/images/Products/cauliflower.png" alt="Red Onion" class="cart-item-img">
+                  <div class="cart-item-details">
+                     <span class="cart-item-name">Red Onion</span>
+                     <span class="cart-item-weight">500g</span>
+                  </div>
+               </div>
+
+               <span class="cart-item-price">$8.00</span>
+
+               <div class="cart-quantity-control">
+                  <button class="qty-btn minus">−</button>
+                  <input type="number" value="2" class="qty-input" min="1">
+                  <button class="qty-btn plus">+</button>
+               </div>
+
+               <span class="cart-item-subtotal">$16.00</span>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+               <button class="remove-btn" aria-label="Remove item">×</button>
+
+               <div class="cart-product-info">
+                  <img src="assets/images/Products/lemon.png" alt="Fresh Yellow Lemon" class="cart-item-img"
+                     width="200px" height="200px">
+                  <div class="cart-item-details">
+                     <span class="cart-item-name">Fresh Yellow Lemon</span>
+                     <span class="cart-item-weight">1Kg</span>
+                  </div>
+               </div>
+
+               <span class="cart-item-price">$8.00</span>
+
+               <div class="cart-quantity-control">
+                  <button class="qty-btn minus">−</button>
+                  <input type="number" value="1" class="qty-input" min="1">
+                  <button class="qty-btn plus">+</button>
+               </div>
+
+               <span class="cart-item-subtotal">$8.00</span>
+            </div>
+
+         </div>
+
+         <!-- Bottom Actions: Coupon & Clear Cart -->
+         <div class="cart-actions">
+            <div class="coupon-group">
+               <input class="coupon-code" type="text" placeholder="Coupon Code">
+               <button class="apply-coupon-btn">Apply Coupon</button>
+            </div>
+            <a class="clear-cart-link" href="#">Clear Shopping Cart</a>
+         </div>
+
+      </div>
+
+      <!-- RIGHT SIDE: Order Summary -->
+      <aside class="cart-right-section">
+         <div class="summary-card">
+            <h3 class="summary-header">Order Summary</h3>
+
+            <div class="summary-rows">
+               <div class="summary-row">
+                  <span class="summary-label">Items</span>
+                  <span class="summary-value">9</span>
+               </div>
+               <div class="summary-row">
+                  <span class="summary-label">Sub Total</span>
+                  <span class="summary-value">$85.40</span>
+               </div>
+               <div class="summary-row">
+                  <span class="summary-label">Shipping</span>
+                  <span class="summary-value">$0.00</span>
+               </div>
+               <div class="summary-row">
+                  <span class="summary-label">Taxes</span>
+                  <span class="summary-value">$0.00</span>
+               </div>
+               <div class="summary-row discount">
+                  <span class="summary-label">Coupon Discount</span>
+                  <span class="summary-value">-$10.00</span>
+               </div>
+            </div>
+
+            <hr class="summary-divider">
+
+            <div class="summary-total-row">
+               <span class="summary-label">Total</span>
+               <span class="summary-value">$74.40</span>
+            </div>
+
+            <button class="checkout-btn">Proceed to Checkout</button>
+         </div>
+      </aside>
+
+   </section>
 
    <!--Footer section -->
    <!--Newsletter section-->
@@ -237,11 +377,6 @@
          </div>
       </div>
    </footer>
-
-
-
-
-
 
 
 </body>
