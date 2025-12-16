@@ -58,6 +58,14 @@ nav,
   color: #1f7a45;
 }
 
+/* ===== MAIN HEADER ===== */
+header {
+  position: relative;
+  z-index: 1002;
+  /* Ensure entire header is above hero section */
+}
+
+/* ===== HEADER MAIN WRAPPER ===== */
 /* ===== HEADER MAIN WRAPPER ===== */
 .header-container {
   background-color: #1f7a45;
@@ -144,6 +152,144 @@ nav,
   filter: brightness(0) invert(1);
   opacity: 1;
   flex-shrink: 0;
+}
+
+/* Hidden Menu Checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Make label look like the button */
+.browse {
+  cursor: pointer;
+  /* Reusing existing button styles via class */
+}
+
+/* Ensure bottom header container allows wrapping on mobile */
+@media (max-width: 900px) {
+  .bottom-header-container {
+    flex-wrap: wrap;
+    /* Allow nav to break to new line */
+    position: relative;
+    padding: 10px;
+    z-index: 1001;
+    /* Ensure header sits above hero section */
+  }
+
+  .browsediv {
+    width: 100%;
+    /* Full width button on mobile */
+  }
+
+  /* Revert to display: none which worked previously */
+  .menu-toggle {
+    display: none;
+  }
+
+  .browse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #f2c94c;
+    /* Yellow background */
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .bottom-nav {
+    display: none;
+    /* Hide nav by default on mobile */
+    width: 100%;
+    background-color: #ffffff;
+    /* Solid white background */
+    border-top: 1px solid #e0e0e0;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow */
+    z-index: 9999;
+    /* Ensure dropdown sits on top of EVERYTHING */
+    position: absolute;
+    /* Float above content instead of pushing it */
+    top: 100%;
+    /* Position directly below the header row */
+    left: 0;
+  }
+
+  /* Show nav when checkbox is checked - SIMPLIFIED without animation */
+  #menu-toggle:checked~.bottom-nav {
+    display: block !important;
+  }
+
+  .nav-list {
+    display: flex;
+    /* Ensure flex layout is maintained */
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    /* Reset margins */
+    padding: 0;
+    /* Reset padding */
+  }
+
+  .nav-list li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: 16px 20px;
+    /* Large touch target */
+    border-bottom: 1px solid #f0f0f0;
+    color: #000000 !important;
+    /* Force black text against white background */
+    font-weight: 600;
+    /* Bold text */
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .nav-list li a:hover {
+    background-color: #f2f2f2;
+    color: #1f7a45 !important;
+    /* Brand green on hover */
+    padding-left: 25px;
+    /* Indent effect */
+  }
+
+  .recently-viewed {
+    display: none;
+  }
+
+  /* Header Icons adjustments for mobile */
+  .header-right {
+    gap: 25px;
+    /* Increase gap */
+  }
+
+  .header-right img {
+    width: 28px;
+    /* Larger icons */
+    height: 28px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .search-input {

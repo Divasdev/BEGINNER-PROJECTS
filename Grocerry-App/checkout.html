@@ -7,8 +7,10 @@
    <title>Shop-GreenBasket</title>
    <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" href="assets/css/shop.css">
-   <link rel="stylesheet" href="assets/css/cart.css"> <!-- Added specific cart css -->
+   <link rel="stylesheet" href="assets/css/cart.css">
+   <link rel="stylesheet" href="assets/css/checkout.css"> <!-- Added specific cart css -->
    <script src="assets/js/scripts.js" defer></script>
+
    <!--LINK TO GOOGLE FONTS-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,9 +76,12 @@
       </div> <!-- end of header-container -->
       <!--header bootom row-->
       <section class="bottom-header-container">
+         <input type="checkbox" id="menu-toggle" class="menu-toggle">
          <div class="browsediv">
-            <button class="browse"><img src="assets/images/HubSpot Brand Kit/Logo/SVG/more.png" width="20px">Browse All
-               Categories</button>
+            <label for="menu-toggle" class="browse">
+               <img src="assets/images/HubSpot Brand Kit/Logo/SVG/more.png" width="20px" alt="menu">
+               Browse All Categories
+            </label>
          </div>
 
          <nav class="bottom-nav">
@@ -118,23 +123,128 @@
    <!-- Reusing the shop hero style but with different content -->
    <section class="hero-section">
       <div class="hero-wrapper">
-         <h3 class="hero-header">Shopping Cart</h3>
-         <h4 class="hero-sub-header">Home / Shopping Cart</h4>
+         <h3 class="hero-header">Checkout</h3>
+         <h4 class="hero-sub-header">Home/ Shopping Cart / Checkout</h4>
       </div>
    </section>
+   <!---Left Side:Billing details  -->
 
+   <!-- CHECKOUT BODY -->
+   <section class="checkout-wrapper">
 
-   <!-- CART SECTION -->
-   <section class="cart-wrapper">
+      <!-- LEFT SIDE: Billing Form -->
+      <div class="billing-section">
+         <h2 class="billing-header">Billing Details</h2>
 
-      <!-- LEFT SIDE: Product List -->
-      <div class="cart-left-section">
+         <form action="#" class="billing-form">
+            <!-- First Name & Last Name -->
+            <div class="form-row">
+               <div class="form-group">
+                  <label class="form-label">First Name *</label>
+                  <input type="text" class="form-input" placeholder="Ex. John">
+               </div>
+               <div class="form-group">
+                  <label class="form-label">Last Name *</label>
+                  <input type="text" class="form-input" placeholder="Ex. Doe">
+               </div>
+            </div>
 
+            <!-- Company -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Company Name (Optional)</label>
+                  <input type="text" class="form-input" placeholder="Enter Company Name">
+               </div>
+            </div>
 
+            <!-- Country -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Country *</label>
+                  <select class="form-select">
+                     <option>Select Country</option>
+                     <option>USA</option>
+                     <option>India</option>
+                     <option>UK</option>
+                  </select>
+               </div>
+            </div>
 
-               
+            <!-- Street Address -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Street Address *</label>
+                  <input type="text" class="form-input" placeholder="Enter Street Address">
+               </div>
+            </div>
 
-      <!-- RIGHT SIDE: Order Summary -->
+            <!-- City -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">City *</label>
+                  <select class="form-select">
+                     <option>Select City</option>
+                     <option>New York</option>
+                     <option>Los Angeles</option>
+                  </select>
+               </div>
+            </div>
+
+            <!-- State -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">State *</label>
+                  <select class="form-select">
+                     <option>Select State</option>
+                     <option>New York</option>
+                     <option>California</option>
+                  </select>
+               </div>
+            </div>
+
+            <!-- Zip Code -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Zip Code *</label>
+                  <input type="text" class="form-input" placeholder="Enter Zip Code">
+               </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Phone *</label>
+                  <input type="tel" class="form-input" placeholder="Enter Phone Number">
+               </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-row">
+               <div class="form-group full-width">
+                  <label class="form-label">Email *</label>
+                  <input type="email" class="form-input" placeholder="Enter Email Address">
+               </div>
+            </div>
+
+            <!-- Delivery Address Options -->
+            <div class="billing-section delivery-section">
+               <h4 class="form-label" style="font-size: 16px;">Delivery Address *</h4>
+               <div class="radio-group">
+                  <label class="radio-option">
+                     <input type="radio" name="delivery-address" checked>
+                     Same as shipping address
+                  </label>
+                  <label class="radio-option">
+                     <input type="radio" name="delivery-address">
+                     Use a different billing address
+                  </label>
+               </div>
+            </div>
+
+         </form>
+      </div>
+
+      <!-- RIGHT SIDE: Order Summary (Reused structure) -->
       <aside class="cart-right-section">
          <div class="summary-card">
             <h3 class="summary-header">Order Summary</h3>
@@ -169,7 +279,7 @@
                <span class="summary-value">$74.40</span>
             </div>
 
-            <button class="checkout-btn">Proceed to Checkout</button>
+            <button class="checkout-btn">Proceed to Payment</button>
          </div>
       </aside>
 
