@@ -1,0 +1,26 @@
+.order-completed{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding:40px;
+}
+.order-completed-text{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   line-height: 5px;
+}
+.tick-img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+.order{
+   font-size: 30px;
+   font-weight: 100;
+}
+.recieved{
+   font-size: 18px;
+   color: rgb(117, 120, 120);
+}
