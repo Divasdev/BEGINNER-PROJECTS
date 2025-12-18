@@ -24,3 +24,50 @@
    font-size: 18px;
    color: rgb(117, 120, 120);
 }
+
+
+
+.order-summary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 32px;
+  background-color: #f4cf54;
+  border-radius: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.btn-wrap {
+  margin-left: auto;
+}
+
+.invoice-btn {
+  background-color: #2f7f5f;
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  font-size: 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.invoice-btn:hover {
+  background-color: #25684d;
+}
