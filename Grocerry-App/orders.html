@@ -127,47 +127,120 @@
       </div>
    </section>
 
+   <!-- MAIN ORDER SUCCESS CONTENT -->
 
-
-   <div class="order-completed">
-      <img src="assets/images/HubSpot Brand Kit/Logo/PNG/check-icon.png" class="tick-img">
-      <div class="order-completed-text">
-         <h2 class="order">Your order is Completed!</h2>
-         <p class="recieved">Thank you. Your order has been recieved.</p>
+   <!-- Order Success Header -->
+   <section class="order-success-header">
+      <div class="success-icon-container">
+         <img src="assets/images/HubSpot Brand Kit/Logo/PNG/check-icon.png" class="success-check-icon" alt="Success">
       </div>
-   </div>
+      <h1 class="success-title">Your order is completed!</h1>
+      <p class="success-subtitle">Thank you. Your order has been received.</p>
+   </section>
 
-
-   
-      <div class="order-summary">
-         <div class="item">
-            <span class="label">Order ID</span>
-            <span class="value">#SDGT1254FD</span>
+   <!-- Order Info Strip (Yellow) -->
+   <section class="order-info-strip">
+      <div class="info-content-wrapper">
+         <div class="info-item">
+            <span class="info-label">Order ID</span>
+            <span class="info-value">#SDGT1254FD</span>
          </div>
-         <div class="item">
-            <span class="label">Payment Mathod </span>
-            <span class="value">Paypal</span>
+         <div class="info-item">
+            <span class="info-label">Payment Method</span>
+            <span class="info-value">Paypal</span>
          </div>
-         <div class="item">
-            <span class="label">Transaction ID</span>
-            <span class="value">TR542SSFE</span>
+         <div class="info-item">
+            <span class="info-label">Transaction ID</span>
+            <span class="info-value">TR542SSFE</span>
          </div>
-         <div class="item">
-            <span class="label">Estimated Delivery Date</span>
-            <span class="value">29 July 2024</span>
+         <div class="info-item">
+            <span class="info-label">Estimated Delivery Date</span>
+            <span class="info-value">29 July 2024</span>
          </div>
-         <div class="btn-wrap">
-            <button class="invoice-btn">Download Invoice</button>
+         <div class="info-action">
+            <button class="download-invoice-btn">Download Invoice</button>
          </div>
       </div>
- 
+   </section>
 
+   <!-- Order Details Card -->
+   <section class="order-details-container">
+      <div class="order-details-card">
+         <h2 class="card-header">Order Details</h2>
 
+         <!-- Products List -->
+         <div class="order-products-list">
+            <div class="list-header">
+               <span>Products</span>
+               <span>Sub Total</span>
+            </div>
 
+            <!-- Product 1 -->
+            <div class="product-row">
+               <div class="product-info">
+                  <div class="product-thumb">
+                     <img src="assets/images/Products/strawberry-isolated-white-background-close-up.jpg"
+                        alt="Fresh Oranges">
+                  </div>
+                  <div class="product-meta">
+                     <span class="product-name">Fresh Oranges</span>
+                     <span class="product-weight">500 g</span>
+                  </div>
+               </div>
+               <span class="product-price">$47.00</span>
+            </div>
 
+            <!-- Product 2 -->
+            <div class="product-row">
+               <div class="product-info">
+                  <div class="product-thumb">
+                     <img src="assets/images/Products/cauliflower.png" alt="Red Onion">
+                  </div>
+                  <div class="product-meta">
+                     <span class="product-name">Red Onion</span>
+                     <span class="product-weight">500 g</span>
+                  </div>
+               </div>
+               <span class="product-price">$16.00</span>
+            </div>
 
+            <!-- Product 3 -->
+            <div class="product-row">
+               <div class="product-info">
+                  <div class="product-thumb">
+                     <img src="assets/images/Products/lemon.png" alt="Fresh Yellow Lemon">
+                  </div>
+                  <div class="product-meta">
+                     <span class="product-name">Fresh Yellow Lemon</span>
+                     <span class="product-weight">1 Kg</span>
+                  </div>
+               </div>
+               <span class="product-price">$8.00</span>
+            </div>
+         </div>
 
-
+         <!-- Financial Summary -->
+         <div class="order-financials">
+            <div class="financial-row">
+               <span>Shipping</span>
+               <span>$00.00</span>
+            </div>
+            <div class="financial-row">
+               <span>Taxes</span>
+               <span>$00.00</span>
+            </div>
+            <div class="financial-row discount">
+               <span>Coupon Discount</span>
+               <span>-$10.00</span>
+            </div>
+            <div class="financial-divider"></div>
+            <div class="financial-row total-row">
+               <span>Total</span>
+               <span>$74.40</span>
+            </div>
+         </div>
+      </div>
+   </section>
 
    <!--Footer section -->
    <!--Newsletter section-->
