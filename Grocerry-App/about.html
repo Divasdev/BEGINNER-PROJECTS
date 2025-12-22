@@ -4,20 +4,22 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Payment - GreenBasket</title>
+   <title>About Us - GreenBasket</title>
    <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" href="assets/css/shop.css">
-   <link rel="stylesheet" href="assets/css/cart.css">
-   <link rel="stylesheet" href="assets/css/checkout.css">
-   <link rel="stylesheet" href="assets/css/payment.css">
+   <link rel="stylesheet" href="assets/css/about.css">
    <script src="assets/js/scripts.js" defer></script>
-
    <!--LINK TO GOOGLE FONTS-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
@@ -118,148 +120,129 @@
 
    </header>
 
-   <!--Hero Section for shop page  -->
-   <!-- Reusing the shop hero style but with different content -->
+   <!-- Hero Section (Breadcrumb) -->
    <section class="hero-section">
       <div class="hero-wrapper">
-         <h3 class="hero-header">Checkout</h3>
-         <h4 class="hero-sub-header">Home / Shopping Cart / Checkout / Payment</h4>
+         <h3 class="hero-header">About Us</h3>
+         <h4 class="hero-sub-header">Home / About Us</h4>
       </div>
    </section>
 
-   <!-- CHECKOUT BODY -->
-   <section class="checkout-wrapper">
+   <!-- About Content Section -->
+   <section class="about-content">
+      <div class="container about-container">
+         <!-- Image Side -->
+         <div class="about-image-wrapper">
+            <img src="assets/images/hero_image.png" alt="Grocery Shopping" class="about-main-img">
+            <div class="years-badge">
+               <span class="years-num">16</span>
+               <span class="years-text">Years<br>of Services</span>
+            </div>
+         </div>
 
-      <!-- LEFT SIDE: Billing Form -->
-      <div class="payment-wrapper">
-         <h3 class="payment-title">Select Payment Method</h3>
+         <!-- Text Side -->
+         <div class="about-text-content">
+            <h4 class="about-label">About Us</h4>
+            <h2 class="about-heading">Your Trusted Partner in <span class="highlight">Fresh Grocery Delivery</span></h2>
+            <p class="about-desc">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+               dolore.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
 
-         <div class="payment-options">
-            <!-- Option 1: Paypal -->
-            <label class="payment-option">
-               <input type="radio" name="payment_method" value="paypal">
-               <div class="option-content">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/WEBP/icons/paypal-logo.png" alt="Paypal"
-                     class="payment-logo">
-                  <span class="payment-text">Paypal</span>
-               </div>
-            </label>
+            <ul class="about-features">
+               <li><span class="check-icon">✔</span> Eco-Friendly and Sustainable Practices</li>
+               <li><span class="check-icon">✔</span> Fresh and High-Quality Groceries</li>
+               <li><span class="check-icon">✔</span> Convenient and Reliable Delivery</li>
+            </ul>
 
-            <!-- Option 2: Visa -->
-            <label class="payment-option">
-               <input type="radio" name="payment_method" value="visa">
-               <div class="option-content">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/WEBP/icons/visa-logo.png" alt="Visa"
-                     class="payment-logo" style="height: 16px;">
-                  <span class="payment-text">**** **** **** 8047</span>
-               </div>
-            </label>
-
-            <!-- Option 3: Google Pay -->
-            <label class="payment-option">
-               <input type="radio" name="payment_method" value="gpay">
-               <div class="option-content">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/WEBP/icons/googlepay-logo.svg" alt="Google Pay"
-                     class="payment-logo">
-                  <span class="payment-text">Google Pay</span>
-               </div>
-            </label>
-
-            <!-- Option 4: Cash On Delivery -->
-            <label class="payment-option">
-               <input type="radio" name="payment_method" value="cod">
-               <div class="option-content">
-                  <img src="assets/images/HubSpot Brand Kit/Logo/WEBP/icons/wallet.png" alt="Cash On Delivery"
-                     class="payment-logo">
-                  <span class="payment-text">Cash On Delivery</span>
-               </div>
-            </label>
-
-            <!-- Option 5: Add New Card -->
-            <div class="new-card-section">
-               <label class="payment-option expanded">
-                  <input type="radio" name="payment_method" value="new_card" checked>
-                  <div class="option-content">
-                     <img src="assets/images/HubSpot Brand Kit/Logo/WEBP/icons/credit-card-logo.png" alt="Card"
-                        class="payment-logo">
-                     <span class="payment-text">Add New Credit/Debit Card</span>
-                  </div>
-               </label>
-
-               <form class="card-form">
-                  <div class="form-group">
-                     <label>Card Holder Name *</label>
-                     <input type="text" placeholder="Ex. John Doe">
-                  </div>
-
-                  <div class="form-group">
-                     <label>Card Number *</label>
-                     <input type="text" placeholder="4716 9627 1635 8047">
-                  </div>
-
-                  <div class="form-row">
-                     <div class="form-group">
-                        <label>Expiry Date *</label>
-                        <input type="text" placeholder="02/30">
-                     </div>
-
-                     <div class="form-group">
-                        <label>CVV *</label>
-                        <input type="text" placeholder="000">
-                     </div>
-                  </div>
-
-                  <label class="save-card">
-                     <input type="checkbox" checked>
-                     <span class="check-label">Save card for future payments</span>
-                  </label>
-
-                  <button type="button" class="add-card-btn">Add Card</button>
-               </form>
+            <div class="founder-sig">
+               <span class="sig-name">Jenny Alexander</span>
+               <span class="sig-role">Jenny Alexander • Founder</span>
             </div>
          </div>
       </div>
-
-      <!-- RIGHT SIDE: Order Summary (Reused structure) -->
-      <aside class="cart-right-section">
-         <div class="summary-card">
-            <h3 class="summary-header">Order Summary</h3>
-
-            <div class="summary-rows">
-               <div class="summary-row">
-                  <span class="summary-label">Items</span>
-                  <span class="summary-value">9</span>
-               </div>
-               <div class="summary-row">
-                  <span class="summary-label">Sub Total</span>
-                  <span class="summary-value">$85.40</span>
-               </div>
-               <div class="summary-row">
-                  <span class="summary-label">Shipping</span>
-                  <span class="summary-value">$0.00</span>
-               </div>
-               <div class="summary-row">
-                  <span class="summary-label">Taxes</span>
-                  <span class="summary-value">$0.00</span>
-               </div>
-               <div class="summary-row discount">
-                  <span class="summary-label">Coupon Discount</span>
-                  <span class="summary-value">-$10.00</span>
-               </div>
-            </div>
-
-            <hr class="summary-divider">
-
-            <div class="summary-total-row">
-               <span class="summary-label">Total</span>
-               <span class="summary-value">$74.40</span>
-            </div>
-
-            <a href="orders.html" class="checkout-btn">Confirm Payment</a>
-         </div>
-      </aside>
-
    </section>
+
+   <!-- Mission / Vision Section -->
+   <section class="vision-mission-section">
+      <div class="container vm-container">
+         <div class="vm-image">
+            <img src="assets/images/users/happy-customer1.png" alt="Happy Customer">
+         </div>
+         <div class="vm-cards">
+            <div class="vm-card">
+               <div class="vm-icon box-icon">🚀</div>
+               <h3>Our Vision</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna.</p>
+            </div>
+            <div class="vm-card">
+               <div class="vm-icon eye-icon">👁</div>
+               <h3>Our Mission</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Team Section -->
+   <section class="team-section">
+      <div class="container">
+         <div class="team-header">
+            <h4>Our Team</h4>
+            <h2>Meet The Passionate<br>Team Behind Our Success</h2>
+         </div>
+
+         <div class="team-grid">
+            <!-- Team Member 1 -->
+            <div class="team-card">
+               <div class="team-img">
+                  <img src="assets/images/Avatars/avatar1.png" alt="Jenny Alexander">
+               </div>
+               <div class="team-info">
+                  <h3>Jenny Alexander</h3>
+                  <p>Founder & CEO</p>
+               </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-card">
+               <div class="team-img">
+                  <img src="assets/images/Avatars/avatar2.png" alt="Bessie Cooper">
+               </div>
+               <div class="team-info">
+                  <h3>Bessie Cooper</h3>
+                  <p>Operations Manager</p>
+               </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-card">
+               <div class="team-img">
+                  <img src="assets/images/Avatars/avatar3.png" alt="Jane Cooper">
+               </div>
+               <div class="team-info">
+                  <h3>Jane Cooper</h3>
+                  <p>Warehouse Manager</p>
+               </div>
+            </div>
+
+            <!-- Team Member 4 -->
+            <div class="team-card">
+               <div class="team-img">
+                  <img src="assets/images/Avatars/avatar4.png" alt="Robert Fox">
+               </div>
+               <div class="team-info">
+                  <h3>Robert Fox</h3>
+                  <p>Inventory Specialist</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
 
    <!--Footer section -->
    <!--Newsletter section-->
@@ -286,10 +269,6 @@
          </article>
       </div>
    </section>
-
-
-
-
    <!-- SITE FOOTER -->
    <footer class="site-footer" role="contentinfo" aria-label="Footer">
       <div class="container footer-container">
@@ -331,7 +310,7 @@
                   <h4>Customer Services</h4>
                   <ul>
                      <li><a href="#">My Account</a></li>
-                     <li><a href="#">Track Your Order</a></li>
+                     <li><a href="trackorder.html">Track Your Order</a></li>
                      <li><a href="#">Returns</a></li>
                      <li><a href="#">FAQ</a></li>
                   </ul>
@@ -373,10 +352,6 @@
       </div>
    </footer>
 
-
-</body>
-
-</html>
 
 </body>
 
