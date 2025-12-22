@@ -4,10 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>About Us - GreenBasket</title>
+   <title>My Account - GreenBasket</title>
    <link rel="stylesheet" href="assets/css/styles.css">
    <link rel="stylesheet" href="assets/css/shop.css">
-   <link rel="stylesheet" href="assets/css/about.css">
+   <link rel="stylesheet" href="assets/css/myaccount.css">
    <script src="assets/js/scripts.js" defer></script>
    <!--LINK TO GOOGLE FONTS-->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,6 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
       rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,126 +119,83 @@
 
    </header>
 
-   <!-- Hero Section (Breadcrumb) -->
-   <section class="hero-section">
+   <!-- Hero Section -->
+   <section class="hero-section account-hero">
       <div class="hero-wrapper">
-         <h3 class="hero-header">About Us</h3>
-         <h4 class="hero-sub-header">Home / About Us</h4>
+         <h3 class="hero-header">My Account</h3>
+         <h4 class="hero-sub-header">Home / My Account</h4>
       </div>
    </section>
 
-   <!-- About Content Section -->
-   <section class="about-content">
-      <div class="container about-container">
-         <!-- Image Side -->
-         <div class="about-image-wrapper">
-            <img src="assets/images/hero_image.png" alt="Grocery Shopping" class="about-main-img">
-            <div class="years-badge">
-               <span class="years-num">16</span>
-               <span class="years-text">Years<br>of Services</span>
-            </div>
-         </div>
+   <!-- Account Dashboard -->
+   <section class="account-section">
+      <div class="account-container">
 
-         <!-- Text Side -->
-         <div class="about-text-content">
-            <h4 class="about-label">About Us</h4>
-            <h2 class="about-heading">Your Trusted Partner in <span class="highlight">Fresh Grocery Delivery</span></h2>
-            <p class="about-desc">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-               dolore.
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+         <!-- Sidebar Menu -->
+         <aside class="account-sidebar">
+            <nav class="sidebar-nav">
+               <a href="#" class="sidebar-item active">Personal Information</a>
+               <a href="#" class="sidebar-item">My Orders</a>
+               <a href="#" class="sidebar-item">Manage Address</a>
+               <a href="#" class="sidebar-item">Payment Method</a>
+               <a href="#" class="sidebar-item">Password Manager</a>
+               <a href="#" class="sidebar-item logout-item">Logout</a>
+            </nav>
+         </aside>
 
-            <ul class="about-features">
-               <li><span class="check-icon">✔</span> Eco-Friendly and Sustainable Practices</li>
-               <li><span class="check-icon">✔</span> Fresh and High-Quality Groceries</li>
-               <li><span class="check-icon">✔</span> Convenient and Reliable Delivery</li>
-            </ul>
-
-            <div class="founder-sig">
-               <span class="sig-name">Jenny Alexander</span>
-               <span class="sig-role">Jenny Alexander • Founder</span>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <!-- Mission / Vision Section -->
-   <section class="vision-mission-section">
-      <div class="container vm-container">
-         <div class="vm-image">
-            <img src="assets/images/users/happy-customer1.png" alt="Happy Customer">
-         </div>
-         <div class="vm-cards">
-            <div class="vm-card">
-               <div class="vm-icon box-icon">🚀</div>
-               <h3>Our Vision</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna.</p>
-            </div>
-            <div class="vm-card">
-               <div class="vm-icon eye-icon">👁</div>
-               <h3>Our Mission</h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna.</p>
-            </div>
-         </div>
-      </div>
-   </section>
-
-   <!-- Team Section -->
-   <section class="team-section">
-      <div class="container">
-         <div class="team-header">
-            <h4>Our Team</h4>
-            <h2>Meet The Passionate<br>Team Behind Our Success</h2>
-         </div>
-
-         <div class="team-grid">
-            <!-- Team Member 1 -->
-            <div class="team-card">
-               <div class="team-img">
-                  <img src="assets/images/Avatars/avatar1.png" alt="Jenny Alexander">
-               </div>
-               <div class="team-info">
-                  <h3>Jenny Alexander</h3>
-                  <p>Founder & CEO</p>
+         <!-- Main Content -->
+         <main class="account-content">
+            <div class="profile-header">
+               <div class="profile-img-wrapper">
+                  <img src="assets/images/Avatars/avatar1.png" alt="Loretta" class="profile-img">
+                  <button class="edit-profile-btn" aria-label="Edit Profile">
+                     <img src="assets/images/HubSpot Brand Kit/Logo/SVG/more.png" alt="Edit"
+                        style="filter: invert(1); width: 14px;">
+                  </button>
                </div>
             </div>
 
-            <!-- Team Member 2 -->
-            <div class="team-card">
-               <div class="team-img">
-                  <img src="assets/images/Avatars/avatar2.png" alt="Bessie Cooper">
+            <form class="account-form">
+               <div class="form-row">
+                  <div class="form-group">
+                     <label for="first-name">First Name *</label>
+                     <input type="text" id="first-name" name="first-name" value="Leslie" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                     <label for="last-name">Last Name *</label>
+                     <input type="text" id="last-name" name="last-name" value="Cooper" placeholder="Last Name">
+                  </div>
                </div>
-               <div class="team-info">
-                  <h3>Bessie Cooper</h3>
-                  <p>Operations Manager</p>
-               </div>
-            </div>
 
-            <!-- Team Member 3 -->
-            <div class="team-card">
-               <div class="team-img">
-                  <img src="assets/images/Avatars/avatar3.png" alt="Jane Cooper">
+               <div class="form-row">
+                  <div class="form-group full-width">
+                     <label for="email">Email *</label>
+                     <input type="email" id="email" name="email" value="example@gmail.com" placeholder="Email Address">
+                  </div>
                </div>
-               <div class="team-info">
-                  <h3>Jane Cooper</h3>
-                  <p>Warehouse Manager</p>
-               </div>
-            </div>
 
-            <!-- Team Member 4 -->
-            <div class="team-card">
-               <div class="team-img">
-                  <img src="assets/images/Avatars/avatar4.png" alt="Robert Fox">
+               <div class="form-row">
+                  <div class="form-group full-width">
+                     <label for="phone">Phone *</label>
+                     <input type="tel" id="phone" name="phone" value="+0123-456-789" placeholder="Phone Number">
+                  </div>
                </div>
-               <div class="team-info">
-                  <h3>Robert Fox</h3>
-                  <p>Inventory Specialist</p>
+
+               <div class="form-row">
+                  <div class="form-group full-width">
+                     <label for="gender">Gender *</label>
+                     <select id="gender" name="gender">
+                        <option value="female" selected>Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                     </select>
+                  </div>
                </div>
-            </div>
-         </div>
+
+               <button type="button" class="update-btn">Update Changes</button>
+            </form>
+         </main>
+
       </div>
    </section>
 
